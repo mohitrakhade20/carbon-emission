@@ -34,7 +34,7 @@ const Card = ({ className, item }) => {
         <div className={styles.avatar}></div>
         <div className={styles.details}>
           <div className={styles.title}>{item.title}</div>
-          <div className={styles.author}>{item.author}</div>
+          {/* <div className={styles.author}>{item.author}</div> */}
         </div>
         {item.statusText && (
           <div

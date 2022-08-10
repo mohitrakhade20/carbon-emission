@@ -8,7 +8,7 @@ import Popular from "../../components/Popular";
 
 const steps = [
   "Select crypto",
-  "Enter amount",
+  "Enter amount carbon",
   "Payment info",
   "Confirm order",
 ];

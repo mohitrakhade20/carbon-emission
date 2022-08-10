@@ -7,7 +7,7 @@ import Icon from "../../../components/Icon";
 const items = [
   {
     title: "Account name",
-    content: "Veum Cecilia",
+    content: "Pradeep Cecilia",
   },
   {
     title: "Account number",
@@ -18,8 +18,8 @@ const items = [
     content: "079 Dariana Knoll, CA",
   },
   {
-    title: "SWIFT Code",
-    content: "UI8",
+    title: "Centralize Wallet Address",
+    content: "xxx xxx xxxx",
   },
   {
     title: "Bank Address",
@@ -45,12 +45,12 @@ const PaymentDetails = () => {
           </div>
         ))}
       </div>
-      <div className={styles.info}>Reference code</div>
+      {/* <div className={styles.info}>Reference code</div>
       <div className={styles.text}>
         You MUST include the Reference Code in your deposit in order to credit
         your account! <br></br>Reference Code:
       </div>
-      <div className={styles.code}>BLUTUKHY34PB</div>
+      <div className={styles.code}>BLUTUKHY34PB</div> */}
       <div className={styles.btns}>
         <Link
           className={cn("button-stroke", styles.button)}

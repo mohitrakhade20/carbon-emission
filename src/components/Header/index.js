@@ -16,16 +16,16 @@ const navigation = [
     url: "/exchange",
   },
   {
-    title: "Buy Crypto",
+    title: "Buy Carbon Credits",
     dropdown: [
       {
-        title: "Credit card",
-        icon: "user",
+        title: "Buy with Crypto",
+        icon: "coin",
         url: "/buy-crypto",
       },
       {
-        title: "Bank deposit",
-        icon: "image",
+        title: "Claim Carbon ",
+        icon: "coin",
         url: "/deposit-fiat",
       },
     ],

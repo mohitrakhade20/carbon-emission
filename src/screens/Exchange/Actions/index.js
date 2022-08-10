@@ -26,7 +26,7 @@ const Actions = () => {
     <div className={styles.actions}>
       <div className={styles.head}>
         <div className={styles.nav}>
-          {navigation.map((x, index) => (
+          {/* {navigation.map((x, index) => (
             <button
               className={cn(styles.link, {
                 [styles.active]: index === activeIndex,
@@ -36,7 +36,7 @@ const Actions = () => {
             >
               {x}
             </button>
-          ))}
+          ))} */}
         </div>
         <div className={styles.info}>
           Crypto trading tutorial

@@ -6,7 +6,7 @@ import styles from "./Cards.module.sass";
 const items = [
   {
     title: "Verra Standard ",
-    price: "36,641.20",
+    price: "3,141.20",
     money: "36,641.20",
     negative: "-0.79%",
     image: "/images/content/currency/verra.png",
@@ -14,6 +14,8 @@ const items = [
   },
   {
     title: "Gold Standard ",
+    price: "76,641.20",
+
     money: "36,641.20",
     positive: "+0.79%",
     image: "images/content/currency/gold.png",
@@ -21,8 +23,8 @@ const items = [
   },
   {
     title: "USDT",
-    price: "36,641.20",
-    money: "36,641.20",
+    price: "3,641",
+    money: "3,641",
     positive: "+0.79%",
     image: "/images/content/currency/tether.svg",
     url: "/market",

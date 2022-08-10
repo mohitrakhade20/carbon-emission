@@ -9,7 +9,7 @@ import Card from "../../../components/Card";
 import { articles } from "../../../mocks/articles";
 
 const dateOptions = ["Recently added", "Long added"];
-const sortingOptions = ["Tutorial", "Usecase", "Trading", "Wallet"];
+const sortingOptions = ["New", "Tree", "Trening", "Global Warming"];
 
 const Catalog = ({ scrollToRefCatalog }) => {
   const [email, setEmail] = useState("");
@@ -34,7 +34,7 @@ const Catalog = ({ scrollToRefCatalog }) => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             name="search"
-            placeholder="Search anything about crypto"
+            placeholder="Search Project to fund ..."
             required
           />
           <button className={cn("button-circle", styles.result)}>

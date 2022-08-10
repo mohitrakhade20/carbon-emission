@@ -5,14 +5,14 @@ import ImportantNotes from "./ImportantNotes";
 import PaymentDetails from "./PaymentDetails";
 import Popular from "../../components/Popular";
 
-const steps = ["Select currency", "Important notes", "Payment details"];
+const steps = ["Buy with currency", "Claim Carbon Credit", "Payment details"];
 
 const DepositFiat = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <>
-      <Bidding title="Deposit fiat" items={steps} activeIndex={activeIndex}>
+      <Bidding title="Buy Carbon Credit" items={steps} activeIndex={activeIndex}>
         {activeIndex === 0 && (
           <SelectCurrency goNext={() => setActiveIndex(1)} />
         )}

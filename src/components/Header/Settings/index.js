@@ -32,7 +32,7 @@ const Settings = ({ className }) => {
         })}
       >
         <button className={styles.head} onClick={() => setVisible(!visible)}>
-          USD
+          USDT
           <Icon name="arrow-down" size="16" />
         </button>
         <div className={styles.body}>

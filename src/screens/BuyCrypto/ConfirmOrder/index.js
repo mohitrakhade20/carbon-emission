@@ -71,7 +71,7 @@ const ConfirmOrder = ({ goBack, goStart }) => {
           ))}
         </div>
         <div className={styles.info}>
-          You are about to buy 0.001499 BTC from Bitcloud
+          You are about to buy 10 Carbon Credits
         </div>
         <div className={styles.table}>
           {parameters.map((x, index) => (
