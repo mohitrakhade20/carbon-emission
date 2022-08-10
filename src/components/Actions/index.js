@@ -19,7 +19,7 @@ const items = [
   },
   {
     title: "Transfer",
-    content: "Internal transfers are free on Bitcloud.",
+    content: "Internal transfers are free on Carbon Credit.",
     color: "#CDB4DB",
     image: "/images/content/actions-pic-2.png",
     image2x: "/images/content/actions-pic-2@2x.png",

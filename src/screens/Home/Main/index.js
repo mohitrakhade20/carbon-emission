@@ -18,7 +18,7 @@ const Main = ({ scrollToRef }) => {
            flying, driving, living, working and partying
           </div>
           <Link className={cn("button", styles.button)} to="/sign-up">
-            Get started now
+            Nutralize now
           </Link>
           <ScrollButton
             onScroll={() =>
