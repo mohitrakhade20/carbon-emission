@@ -1,0 +1,62 @@
+@import ../../../styles/helpers
+
+.nav
+    display: flex
+    justify-content: center
+    margin-bottom: 32px
+    .link
+        display: flex
+        padding: 6px 12px
+        border-radius: 14px
+        background: none
+        +button-2
+        color: $n4
+        transition: all .2s
+        &:hover
+            color: $n3
+            +dark
+                color: $n8
+        &.active
+            background: $n3
+            color: $n8
+            +dark
+                background: $n3
+                color: $n8
+        &:not(:last-child)
+            margin-right: 24px
+
+.container
+    margin-bottom: 32px
+
+.line
+    display: flex
+    align-items: flex-end
+    .field
+        &:first-child
+            flex-shrink: 0
+            width: 128px
+            margin-right: 8px
+        &:nth-child(2)
+            flex-grow: 1
+
+.foot
+    display: flex
+    justify-content: space-between
+    margin-top: 16px
+    +caption-bold-2
+    .link
+        color: $p1
+        transition: color .2s
+        &:hover
+            color: darken($p1, 10)
+
+.scan
+    +caption-bold-2
+    color: $n4
+    transition: color .2s
+    &:hover
+        color: $n2
+
+.button
+    width: 100%
+    margin-top: 32px

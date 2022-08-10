@@ -1,0 +1,60 @@
+@import ../../../styles/helpers
+
+.main
+    position: relative
+
+.container
+    display: flex
+    align-items: center
+    min-height: 740px
+    padding-top: 112px
+    padding-bottom: 112px
+    +d
+        padding-top: 80px
+    +m
+        display: block
+        min-height: auto
+        padding-top: 32px
+        padding-bottom: 16px
+
+.wrap
+    position: relative
+    z-index: 3
+    max-width: 545px
+    +t
+        max-width: 350px
+    +m
+        max-width: 100%
+        margin-bottom: 16px
+
+.stage
+    margin-bottom: 12px
+
+.title
+    margin-bottom: 20px
+
+.text
+    margin-bottom: 24px
+    +body-2
+    color: $n4
+
+.form
+    max-width: 300px
+    +m
+        max-width: 100%
+    
+.bg
+    position: absolute
+    top: 12px
+    right: calc(50% - 730px)
+    width: 785px
+    pointer-events: none
+    +d
+        right: calc(50% - 670px)
+        width: 700px
+    +m
+        position: static
+        width: 100%
+        padding-left: 16px
+    img
+        width: 100%

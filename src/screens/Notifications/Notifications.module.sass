@@ -1,0 +1,91 @@
+@import ../../styles/helpers
+
+.notifications
+    padding: 32px 0
+    background: $n7
+    +t
+        padding-bottom: 64px
+    +dark
+        background: none
+
+.body
+    padding: 40px
+    border-radius: 8px
+    background: $n8
+    +t
+        padding: 0
+        background: none
+    +dark
+        background: #18191D
+        +t
+            background: none
+
+.top
+    display: flex
+    align-items: center
+    margin-bottom: 32px
+    padding-bottom: 32px
+    border-bottom: 1px solid $n6
+    +m
+        display: block
+        margin-bottom: 20px
+        padding-bottom: 0
+        border: none
+    +dark
+        border-color: $n3
+    .button
+        &:not(:last-child)
+            margin-right: 16px
+
+.title
+    margin-right: auto
+    +m
+        margin: 0 0 20px
+
+.row
+    display: flex
+    flex-direction: row-reverse
+    +m
+        display: block
+
+.toggle
+    display: none
+    +m
+        display: flex
+        width: 100%
+
+.wrapper
+    flex-grow: 1
+    padding-right: 80px
+    +d
+        padding-right: 48px
+    +t
+        padding-right: 32px
+    +m
+        padding: 48px 0 0
+
+.filters
+    flex-shrink: 0
+    width: 352px
+    +x
+        width: 300px
+    +d
+        width: 230px
+    +m
+        display: none
+        padding-top: 32px
+        &.active
+            display: block
+
+.list
+    +m
+        margin: 0 -32px
+
+.btns
+    margin-top: 56px
+    text-align: center
+    +t
+        margin-top: 32px
+
+
+

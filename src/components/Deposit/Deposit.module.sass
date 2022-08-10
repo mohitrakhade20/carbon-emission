@@ -1,0 +1,153 @@
+@import ../../styles/helpers
+
+.head
+    padding-top: 72px
+    .icon
+        background: $p2
+
+.icon
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 80px
+    height: 80px
+    margin: 0 auto 32px
+    border-radius: 50%
+    svg
+        fill: $n8
+
+.info
+    margin-bottom: 32px
+    text-align: center
+    +body-bold-2
+
+.btns
+    .button
+        width: 100%
+        &:not(:last-child)
+            margin-bottom: 8px
+            
+.title
+    margin-bottom: 8px
+    padding-right: 56px
+    +m
+        +poppins
+        font-size: 24px
+        line-height: 32px
+        font-weight: 600
+
+.back
+    position: relative
+    top: -7px
+    margin-right: 16px
+    +m
+        top: -5px
+    svg
+        transition: fill .2s
+        +dark
+            fill: $n8
+    &:hover
+        svg
+            fill: $p1
+
+.subtitle
+    margin-bottom: 32px
+    padding-left: 48px
+    +body-2
+    color: $n4
+
+.wrap
+    display: flex
+    margin-bottom: 32px
+    padding: 20px 32px
+    border-radius: 4px
+    background: $n7
+    +m
+        padding: 20px
+    +dark
+        background: $n3
+
+.category
+    position: relative
+    margin-right: auto
+    padding-left: 20px
+    font-weight: 500
+    color: $n3
+    +dark
+        color: $n6
+    &:before
+        content: ""
+        position: absolute
+        top: 6px
+        left: 0
+        width: 12px
+        height: 12px
+        border-radius: 4px
+        background: $p4
+
+.details
+    text-align: right
+    +m
+        padding-top: 2px
+
+.currency
+    +body-bold-2
+    +m
+        font-size: 14px
+
+.price
+    color: $n4
+
+.stage
+    margin-bottom: 12px
+    text-align: center
+    +body-bold-2
+
+.content
+    margin-bottom: 32px
+    text-align: center
+    +caption-2
+    color: $n4
+
+.code
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    max-width: 310px
+    height: 40px
+    margin: 0 auto 32px
+    background: $n7
+    border: 1px solid $n6
+    border-radius: 4px
+    font-weight: 500
+    +dark
+        background: $n3
+        border-color: $n3
+
+.copy
+    margin-left: 12px
+    svg
+        fill: $n4
+        transition: fill .2s
+    &:hover
+        svg
+            fill: $n2
+            +dark
+                fill: $n8
+
+.preview
+    width: 160px
+    margin: 0 auto 32px
+    padding: 14px
+    border: 2px dashed $p1
+    border-radius: 12px
+    img
+        width: 100%
+        border-radius: 8px
+
+.note
+    text-align: center
+    +caption-3
+    font-weight: 500
+    color: $n4

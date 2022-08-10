@@ -1,0 +1,143 @@
+@import ../../styles/helpers
+
+.activity
+    padding: 32px 0
+    background: $n7
+    +m
+        background: none
+    +dark
+        background: none
+
+.container
+    +d
+        padding: 0 40px
+    +m
+        padding: 0 32px
+
+.body
+    padding: 40px
+    border-radius: 8px
+    background: $n8
+    +d
+        padding: 24px
+    +t
+        padding: 0
+        background: none
+    +dark
+        background: #18191D
+        +t
+            background: none
+
+.top
+    display: flex
+    align-items: center
+    margin-bottom: 32px
+    padding-bottom: 32px
+    border-bottom: 1px solid $n6
+    +m
+        display: block
+        padding: 0
+        border: none
+    +dark
+        border-color: $n3
+
+.dropdown
+    display: none
+    +t
+        display: block
+        width: 256px
+        margin-right: auto
+    +m
+        width: 100%
+        margin: 0 0 16px
+
+.dropdownHead
+    background: none
+
+.nav
+    display: flex
+    margin-right: auto
+    +t
+        display: none
+
+.link
+    display: flex
+    padding: 6px 12px
+    border-radius: 14px
+    background: none
+    +button-2
+    color: $n4
+    transition: all .2s
+    &:hover
+        color: $n3
+        +dark
+            color: $n8
+    &.active
+        background: $n3
+        color: $n8
+        +dark
+            background: $n3
+            color: $n8
+    &:not(:last-child)
+        margin-right: 16px
+        +d
+            margin-right: 8px
+
+.form
+    position: relative
+    flex-shrink: 0
+    width: 276px
+    margin-right: 16px
+    +d
+        width: 230px
+    +m
+        width: 100%
+        margin: 0 0 16px
+
+.input
+    width: 100%
+    height: 40px
+    padding: 0 40px 0 14px
+    border-radius: 8px
+    background: none
+    border: 2px solid $n6
+    +poppins
+    +caption-2
+    color: $n2
+    transition: border-color .2s
+    +t
+        height: 48px
+    +dark
+        border-color: $n3
+        color: $n8
+    +placeholder
+        color: $n4
+    &:focus
+        border-color: $n4
+
+.result
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    width: 40px
+    svg
+        fill: $n4
+        transition: fill .2s
+    &:hover
+        svg
+            fill: $p1
+
+.line
+    display: flex
+    align-items: center
+    margin-bottom: 42px
+
+.title
+    margin-right: auto
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+@import ../../../styles/helpers
+
+.title
+    margin-bottom: 16px
+    span
+        color: $p4
+
+.text
+    margin-bottom: 40px
+    +caption-2
+    color: $n4
+    span
+        font-weight: 600
+        color: $n2
+        +dark
+            color: $n8
+
+.email
+    display: flex
+    align-items: center
+    margin-bottom: 24px
+    +body-bold-2
+    svg
+        margin-right: 12px
+        fill: $n2
+        +dark
+            fill: $n8
+
+.subtitle
+    margin-bottom: 8px
+    +body-bold-1
+
+.info
+    margin-bottom: 24px
+    color: $n3
+    +dark
+        color: $n5
+
+.row
+    display: flex
+    margin: 0 -8px
+    +m
+        display: block
+        margin: 0
+
+.field
+    position: relative
+    flex: 0 0 calc(50% - 16px)
+    width: calc(50% - 16px)
+    margin: 0 8px
+    +m
+        width: 100%
+        margin: 0
+        &:not(:last-child)
+            margin-bottom: 16px
+
+.button
+    margin-top: 16px
+    +m
+        width: 100%

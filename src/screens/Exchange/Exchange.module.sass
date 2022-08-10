@@ -1,0 +1,78 @@
+@import ../../styles/helpers
+
+.exchange
+    min-height: calc(100vh - 88px)
+    padding: 4px
+    background: #F1F2F4
+    +t
+        min-height: calc(100vh - 114px)
+        padding: 16px 16px 132px
+    +dark
+        background: $n1
+
+.nav
+    display: none
+    +t
+        display: flex
+        margin-bottom: 16px
+    +m
+        justify-content: space-between
+
+.link
+    display: flex
+    padding: 6px 12px
+    border-radius: 14px
+    background: none
+    +button-2
+    color: $n3
+    transition: all .2s
+    &.active
+        background: $n3
+        color: $n8
+        +dark
+            background: $n2
+            color: $n8
+    &:not(:last-child)
+        margin-right: 8px
+        +m
+            margin-right: 0
+
+.row
+    display: flex
+    margin-top: 4px
+    +d
+        display: block
+        &:after
+            content: " "
+            display: table
+            clear: both
+            +t
+                display: none
+
+.col
+    &:first-child,
+    &:nth-child(3)
+        flex-shrink: 0
+        width: 256px
+        +d
+            float: left
+        +t
+            float: none
+            width: 100%
+    &:nth-child(2)
+        flex-grow: 1
+        margin: 0 4px
+        +d
+            float: right
+            width: calc(100% - 260px)
+            margin: 0 0 0 4px
+        +t
+            float: none
+            width: 100%
+            margin: 0
+    &:first-child
+        +d
+            margin-bottom: 4px
+        +t
+            margin-bottom: 0
+        

@@ -1,0 +1,78 @@
+@import ../../styles/helpers
+
+.top
+    padding: 32px
+    background: $n8
+    border-radius: 4px
+    +m
+        padding: 32px 24px
+    +dark
+        background: #17181B
+
+.line
+    display: flex
+    align-items: center
+    margin-bottom: 20px
+
+.title
+    margin-right: auto
+    +m
+        +poppins
+        font-size: 24px
+        line-height: 32px
+        font-weight: 600
+    span
+        margin-left: 12px
+        color: $n5
+
+.back
+    position: relative
+    top: -2px
+    margin-right: 12px
+    svg
+        fill: $n4
+        transition: fill .2s
+    &:hover
+        svg
+            fill: $n2
+
+.btns
+    display: flex
+    +m
+        display: none
+    .button
+        &:not(:last-child)
+            margin-right: 12px
+
+.info
+    margin-bottom: 4px
+    font-weight: 500
+
+.currency
+    display: flex
+    align-items: center
+
+.number
+    +body-bold-1
+
+.category
+    margin-left: 8px
+
+.price
+    +body-2
+    color: $n4
+
+.head
+    padding: 20px 32px 8px
+    +caption-2
+    font-weight: 500
+    color: $n4
+    +m
+        padding: 20px 0 8px
+
+.body
+    background: $n8
+    border-radius: 4px
+    overflow: hidden
+    +dark
+        background: #17181B

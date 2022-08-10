@@ -1,0 +1,61 @@
+@import ../../../styles/helpers
+
+.stage
+    +caption-2
+    color: $n3
+    +m
+        margin-bottom: 12px
+    +dark
+        color: $n6
+
+.title
+    margin-bottom: 12px
+    span
+        color: $p3
+
+.email
+    display: flex
+    align-items: center
+    margin-bottom: 48px
+    +body-bold-2
+    +m
+        margin-bottom: 32px
+    svg
+        margin-right: 12px
+        fill: $n2
+        +dark
+            fill: $n8
+
+.subtitle
+    margin-bottom: 24px
+    +body-bold-1
+
+.info
+    margin-bottom: 32px
+    +body-2
+    color: $n3
+    +dark
+        color: $n6
+
+.row
+    display: flex
+    margin: 0 -8px
+    +m
+        display: block
+        margin: 0
+
+.field
+    position: relative
+    flex: 0 0 calc(50% - 16px)
+    width: calc(50% - 16px)
+    margin: 0 8px
+    +m
+        width: 100%
+        margin: 0
+        &:not(:last-child)
+            margin-bottom: 16px
+
+.button
+    margin-top: 16px
+    +m
+        width: 100%

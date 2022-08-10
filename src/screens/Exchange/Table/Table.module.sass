@@ -1,0 +1,81 @@
+@import ../../../styles/helpers
+
+.inner
+    margin-top: 4px
+    padding: 16px
+    border-radius: 4px
+    background: $n8
+    +dark
+        background: #17181B
+
+.dropdown
+    display: none
+    +m
+        display: block
+        width: 100%
+        margin-bottom: 16px
+
+.nav
+    display: flex
+    margin-bottom: 16px
+    +m
+        display: none
+
+.link
+    display: flex
+    padding: 6px 12px
+    border-radius: 14px
+    background: none
+    +button-2
+    color: $n4
+    transition: all .2s
+    &:hover
+        color: $n3
+        +dark
+            color: $n6
+    &.active
+        background: $n6
+        color: $n2
+        +dark
+            background: $n3
+            color: $n8
+    &:not(:last-child)
+        margin-right: 16px
+
+.table
+    display: table
+    width: 100%
+
+.row
+    display: table-row
+    &:first-child
+        .col
+            padding-bottom: 10px
+            +caption-bold-2
+            color: $n4
+    &:not(:first-child)
+        .col
+            +caption-2
+            font-weight: 500
+
+.col
+    display: table-cell
+    padding: 6px
+    &:first-child
+        padding-left: 0
+        color: $n4
+    &:nth-child(3)
+        +m
+            padding-right: 0
+            text-align: right
+    &:last-child
+        padding-right: 0
+        text-align: right
+        +m
+            display: none
+
+.positive
+    color: $p4
+
+.negative
+    color: $p3

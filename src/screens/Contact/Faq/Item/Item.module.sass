@@ -1,0 +1,57 @@
+@import ../../../../styles/helpers
+
+.item
+    &:hover
+        .head
+            color: $p1
+        .number
+            color: $p1
+    &:not(:last-child)
+        .head
+            border-bottom: 1px solid $n6
+            +dark
+                border-color: $n3
+
+.head
+    position: relative
+    display: flex
+    align-items: center
+    padding: 24px 0
+    +body-bold-2
+    cursor: pointer
+    transition: color .2s
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
+    &.active
+        .number
+            color: $p1
+        .arrow
+            svg
+                transform: rotate(180deg)
+
+.number
+    flex-shrink: 0
+    width: 40px
+    color: $n4
+    transition: color .2s
+
+.title
+    flex-grow: 1
+
+.arrow
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-shrink: 0
+    width: 24px
+    margin-left: 16px
+    svg
+        fill: $n4
+        transition: transform .2s
+
+.body
+    display: none
+    padding: 24px 0 0 40px
+    color: $n4
+    &.visible
+        display: block
+

@@ -1,0 +1,112 @@
+@import ../../../styles/helpers
+
+.title
+    margin-bottom: 48px
+    +body-bold-1
+    +m
+        margin-bottom: 32px
+
+.row
+    display: flex
+    margin: 0 -12px
+    +m
+        display: block
+        margin: 0
+    &:not(:last-child)
+        margin-bottom: 48px
+
+.col
+    flex: 0 0 calc(50% - 24px)
+    width: calc(50% - 24px)
+    margin: 0 12px
+    +m
+        width: 100%
+        margin: 0
+        &:not(:last-child)
+            margin-bottom: 24px
+
+.label
+    margin-bottom: 12px
+    font-weight: 500
+
+.payment
+    display: flex
+    justify-content: center
+    align-items: flex-start
+
+.dropdownHead
+    background: none
+
+.field
+    position: relative
+
+.value,
+.input
+    +dm-sans
+    font-weight: 700
+    font-size: 96px
+    line-height: 1
+    letter-spacing: -.02em
+    color: $n2
+    +m
+        font-size: 64px
+
+.value
+    min-width: 72px
+    max-width: 500px
+    min-height: 96px
+    padding-right: 5px
+    opacity: 0
+    +m
+        min-height: 64px
+        max-width: 280px
+        padding-bottom: 10px
+
+.input
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    border: none
+    background: none
+    box-shadow: none
+    color: $n2
+    +dark
+        color: $n8
+
+.sign
+    position: relative
+    top: 8px
+    margin-right: 8px
+    +m
+        top: 1px
+
+.price
+    margin-bottom: 12px
+    text-align: center
+    +body-bold-2
+    span
+        margin-left: 8px
+        color: $n4
+
+.variants
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin: -8px -8px 0
+    .button
+        margin: 8px 8px 0
+        color: $n4
+        &:hover
+            color: $n8
+
+.btns
+    margin-top: 48px
+    text-align: center
+    +m
+        margin-top: 32px
+    .button
+        min-width: 184px
+        +m
+            min-width: 100%

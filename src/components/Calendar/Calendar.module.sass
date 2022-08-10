@@ -1,0 +1,67 @@
+@import ../../styles/helpers
+
+.calendar
+    position: relative
+    z-index: 3
+
+.button
+    +m
+        width: 100%
+    &.active
+        background: $n2
+        box-shadow: 0 0 0 2px $n2 inset
+        color: $n8
+        svg
+            fill: $n8
+        +dark
+            background: $n3
+            box-shadow: 0 0 0 2px $n3 inset
+
+.body
+    position: absolute
+    top: calc(100% + 16px)
+    right: 0
+    z-index: 2
+    width: 690px
+    padding: 48px
+    background: $n8
+    border: 1px solid $n6
+    box-shadow: 0px 40px 32px -24px rgba(15, 15, 15, 0.12)
+    border-radius: 16px
+    text-align: center
+    visibility: hidden
+    opacity: 0
+    transition: all .2s
+    +m
+        display: none
+        position: static
+        width: auto
+        padding: 16px 0 0
+        border: none
+        background: none
+        box-shadow: none
+        border-radius: 0
+        visibility: visible
+        opacity: 1
+    +dark
+        background: $n2
+        border-color: $n3
+        +m
+            background: none
+    &.show
+        visibility: visible
+        opacity: 1
+        +m
+            display: block
+
+.datepicker
+    display: inline-block
+    +m
+        display: none
+
+.variants
+    display: flex
+    flex-wrap: wrap
+    margin: -8px 0 0 -16px
+    .button
+        margin: 8px 0 0 16px

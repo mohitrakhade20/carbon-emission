@@ -1,0 +1,94 @@
+@import ../../../../styles/helpers
+
+.cards
+    display: flex
+    padding: 24px 8px
+    border-radius: 24px
+    background: $n7
+    +t
+        margin: 0 -20px
+    +m
+        display: block
+        margin: -32px -16px 0
+        padding: 24px
+    +dark
+        background: $n2
+
+.card
+    flex: 0 0 calc(25% - 32px)
+    width: calc(25% - 32px)
+    margin: 0 16px
+    padding: 32px
+    border-radius: 16px
+    color: $n2
+    transition: all .2s
+    +d
+        padding: 24px 16px
+    +t
+        padding: 16px 0
+    +m
+        display: flex
+        width: 100%
+        margin: 0
+        padding: 16px 24px
+    +dark
+        color: $n8
+    &:hover
+        box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1)
+        background: $n8
+        +t
+            box-shadow: none
+            background: none
+        +dark
+            background: $n3
+            +t
+                background: none
+
+.icon
+    display: flex
+    align-items: center
+    height: 40px
+    margin-bottom: 16px
+    +m
+        flex-shrink: 0
+        width: 40px
+        margin: 0 16px 0 0
+    img
+        max-width: 100%
+        max-height: 100%
+
+.details
+    +m
+        flex-grow: 1
+
+.line
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin-bottom: 4px
+    +caption-bold-2
+
+.title
+    margin-right: 12px
+    color: $n4
+
+.positive,
+.negative
+    display: inline-block
+    padding: 2px 8px
+    border-radius: 12px
+    +caption-bold-2
+    color: $n8
+
+.positive
+    background: $p4
+
+.negative
+    background: $p3
+
+.price
+    margin-bottom: 4px
+    +body-bold-1
+    
+.money
+    +caption-2

@@ -1,0 +1,98 @@
+@import ../../../styles/helpers
+
+.row
+    display: flex
+    background: $n7
+    +m
+        display: block
+    +dark
+        background: $n1
+
+.col
+    &:first-child
+        flex-grow: 1
+        padding-right: 4px
+        +m
+            padding-right: 0
+        .price
+            color: $n4
+    &:nth-child(2)
+        display: flex
+        flex-direction: column
+        flex-shrink: 0
+        width: 285px
+        padding: 24px
+        background: $n8
+        border-radius: 4px
+        +m
+            width: 100%
+            margin-top: 4px
+        +dark
+            background: #17181B
+        .price
+            margin-bottom: 16px
+            +body-bold-1
+
+.list
+    display: flex
+    flex-wrap: wrap
+    margin: -2px
+
+.item
+    display: flex
+    align-items: flex-start
+    flex: 0 0 calc(50% - 4px)
+    width: calc(50% - 4px)
+    margin: 2px
+    padding: 20px 32px
+    border-radius: 4px
+    background: $n8
+    +x
+        flex: 0 0 calc(100% - 4px)
+        width: calc(100% - 4px)
+    +m
+        padding: 20px 24px
+    +dark
+        background: #17181B
+    &:last-child
+        flex: 0 0 calc(100% - 4px)
+        width: calc(100% - 4px)
+
+.title
+    display: flex
+    align-items: center
+    margin-right: auto
+    font-weight: 500
+    color: $n3
+    +dark
+        color: $n7
+
+.bg
+    flex-shrink: 0
+    width: 12px
+    height: 12px
+    margin-right: 8px
+    border-radius: 4px
+
+.details
+    text-align: right
+
+.currency
+    +body-bold-2
+
+.info
+    display: flex
+    align-items: center
+    margin-bottom: 4px
+    .category
+        border-radius: 13px
+
+.money
+    margin-right: 12px
+    +caption-bold-2
+    color: $n4
+
+.chart
+    width: 100%
+    height: 52px
+    margin-top: auto

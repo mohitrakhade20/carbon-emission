@@ -1,0 +1,47 @@
+@import ../../styles/helpers
+
+.scroll
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 32px
+    height: 32px
+    border-radius: 50%
+    background: none
+    overflow: hidden
+    border: 2px solid $n6
+    transition: border-color .2s
+    svg
+        fill: $n5
+        transition: fill .2s
+    &:hover
+        border-color: $n2
+        svg
+            fill: $n2
+    +dark
+        border-color: $n3
+        &:hover
+            border-color: $n8
+            svg
+                fill: $n8
+
+.line
+    display: flex
+    flex-direction: column
+    transform: translateY(-23px)
+    animation: arrowsDown ease-out 1.4s infinite
+    svg
+        &:not(:last-child)
+            margin-bottom: 24px
+
+@keyframes arrowsDown
+    80%
+        transform: translateY(23px)
+    100%
+        transform: translateY(23px)
+
+@keyframes arrowsDownSmall
+    80%
+        transform: translateY(12px)
+    100%
+        transform: translateY(12px)

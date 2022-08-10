@@ -1,0 +1,150 @@
+@import ../../../styles/helpers
+
+.section
+    +m
+        position: relative
+        padding-bottom: 80px
+
+.line
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 40px
+    +m
+        display: block
+        margin-bottom: 32px
+    .button
+        flex-shrink: 0
+        margin-left: 40px
+        +m
+            position: absolute
+            left: 32px
+            right: 32px
+            bottom: 0
+            width: calc(100% - 64px)
+            margin: 0
+
+.nav
+    display: flex
+    margin-bottom: 64px
+    +m
+        display: none
+
+.dropdown
+    display: none
+    +m
+        display: block
+        margin-bottom: 32px
+
+.link
+    display: flex
+    padding: 6px 12px
+    border-radius: 14px
+    background: none
+    +button-2
+    color: $n4
+    transition: all .2s
+    &:hover
+        color: $n3
+        +dark
+            color: $n6
+    &.active
+        background: $n3
+        color: $n8
+        +dark
+            background: $n3
+            color: $n8
+    &:not(:last-child)
+        margin-right: 24px
+
+.table
+    display: table
+    width: 100%
+
+.row
+    display: table-row
+    color: $n2
+    &:first-child
+        .col
+            padding: 24px 16px
+            border-bottom: 1px solid $n6
+            color: $n4
+            +m
+                padding: 8px
+                &:nth-child(2)
+                    padding-left: 0
+                &:last-child
+                    padding-right: 0
+            +dark
+                border-color: $n3
+    &:not(:first-child)
+        transition: background .2s
+        .col
+            vertical-align: middle
+            +body-bold-2
+            +m
+                font-size: 12px
+            &:first-child
+                border-radius: 12px 0 0 12px
+                color: $n4
+                +t
+                    border-radius: 0
+            &:last-child
+                border-radius: 0 12px 12px 0
+                +t
+                    border-radius: 0
+        &:hover
+            background: $n7
+            +t
+                background: none
+            +dark
+                background: $n2
+
+.col
+    display: table-cell
+    padding: 20px 16px
+    +t
+        &:nth-child(5)
+            display: none
+    +m
+        padding: 6px 8px
+        font-size: 12px
+        &:first-child,
+        &:nth-child(6)
+            display: none
+        &:nth-child(2)
+            padding-left: 0
+        &:last-child
+            padding-right: 0
+    +dark
+        color: $n8
+
+.item
+    display: flex
+    align-items: center
+
+.icon
+    flex-shrink: 0
+    width: 40px
+    margin-right: 32px
+    +m
+        margin-right: 16px
+    img
+        max-width: 100%
+
+.currency
+    margin-left: 12px
+    color: $n5
+    +m
+        display: none
+
+.positive
+    color: $p4
+
+.negative
+    color: $p3
+
+.chart
+    width: 136px
+    height: 40px
+

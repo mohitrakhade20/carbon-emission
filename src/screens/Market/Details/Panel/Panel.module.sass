@@ -1,0 +1,150 @@
+@import ../../../../styles/helpers
+
+.panel
+    margin-bottom: 72px
+    border-radius: 24px
+    box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1)
+    background: $n8
+    border: 1px solid $n7
+    +m
+        margin: 0 -16px 32px
+    +dark
+        background: #18191D
+        border-color: $n2
+
+.list
+    display: flex
+    margin: 0 -18px
+    +t
+        margin: 0
+        overflow: auto
+        overflow-x: auto 
+        -ms-overflow-style: none
+        scrollbar-width: none
+        -webkit-overflow-scrolling: touch
+        &::-webkit-scrollbar
+            display: none 
+        &:before,
+        &:after
+            content: ""
+            flex-shrink: 0
+            width: 24px
+            height: 1px
+
+.item
+    display: flex
+    flex: 0 0 calc(33.333% - 36px)
+    width: calc(33.333% - 36px)
+    margin: 0 18px
+    padding: 24px
+    color: $n2
+    +t
+        flex: 0 0 250px
+        width: 250px
+        margin: 0
+        padding: 24px 0
+    +m
+        flex: 0 0 220px
+        width: 220px
+    +dark
+        color: $n8
+    &:hover
+        .price
+            color: $p1
+
+.icon
+    flex-shrink: 0
+    width: 40px
+    margin-right: 16px
+
+.details
+    flex-grow: 1
+
+.line
+    display: flex
+    align-items: center
+    margin-bottom: 4px
+
+.title
+    margin-right: 12px
+    +caption-bold-2
+    color: $n4
+
+.positive,
+.negative
+    display: inline-block
+    padding: 2px 8px
+    border-radius: 12px
+    +caption-bold-2
+    color: $n8
+
+.positive
+    background: $p4
+
+.negative
+    background: $p3
+
+.price
+    margin-bottom: 4px
+    +body-bold-1
+    transition: color .2s
+    
+.money
+    +caption-2
+
+.foot
+    display: flex
+    align-items: center 
+    padding: 34px 32px
+    border-top: 1px solid $n6
+    +m
+        display: block
+    +dark
+        border-color: $n2
+
+.nav
+    display: flex
+    margin-right: auto
+    +m
+        display: none
+
+.link
+    display: flex
+    padding: 6px 12px
+    border-radius: 14px
+    background: none
+    +button-2
+    color: $n4
+    transition: all .2s
+    &:hover
+        color: $n3
+        +dark
+            color: $n6
+    &.active
+        background: $n3
+        color: $n8
+        +dark
+            background: $n6
+            color: $n2
+    &:not(:last-child)
+        margin-right: 12px
+        +t
+            margin-right: 6px
+
+.button
+    +m
+        display: none
+
+.dropdown
+    display: none
+    +m
+        display: block
+        width: 100%
+
+.chart
+    flex-grow: 1
+    width: 100%
+    height: 34px
+    margin-left: 12px
+    +d
+        display: none

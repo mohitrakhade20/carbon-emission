@@ -1,0 +1,96 @@
+@import ../../../styles/helpers
+
+.actions
+    margin-top: 4px
+    padding: 16px
+    background: $n8
+    border-radius: 4px
+    +t
+        position: fixed
+        left: 0
+        right: 0
+        bottom: 0
+        z-index: 5
+        margin: 0
+        box-shadow: 0px -16px 64px rgba(15, 15, 15, 0.1)
+    +dark
+        background: #17181B
+
+.head
+    display: flex
+    align-items: center
+    margin-bottom: 24px
+    +t
+        margin-bottom: 16px
+
+.info
+    +caption-2
+    font-weight: 500
+    color: $n4
+    +m
+        display: none
+    a
+        margin-left: 8px
+        color: $n2
+        transition: color .2s
+        svg
+            transition: fill .2s
+        +dark
+            color: $n6
+            svg
+                fill: $n6
+        &:hover
+            color: $p1
+            svg
+                fill: $p1
+
+.nav
+    display: flex
+    margin-right: auto
+
+.link
+    display: flex
+    padding: 6px 12px
+    border-radius: 14px
+    background: none
+    +button-2
+    color: $n4
+    transition: all .2s
+    &:hover
+        color: $n3
+        +dark
+            color: $n6
+    &.active
+        background: $n6
+        color: $n2
+        +dark
+            background: $n3
+            color: $n8
+    &:not(:last-child)
+        margin-right: 16px
+
+.wrapper
+    +t
+        position: fixed
+        top: 100%
+        left: 0
+        right: 0
+        z-index: 6
+        background: $n8
+        padding: 16px
+        transition: all .3s
+        +dark
+            background: $n1
+        &.show
+            transform: translateY(-100%)
+            box-shadow: 0px -16px 64px rgba(15, 15, 15, 0.1)
+
+.btns
+    display: none
+    +t
+        display: flex
+        margin: 0 -6px
+    .button
+        flex: 0 0 calc(50% - 12px)
+        width: calc(50% - 12px)
+        margin: 0 6px

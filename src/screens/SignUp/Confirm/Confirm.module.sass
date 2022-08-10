@@ -1,0 +1,27 @@
+@import ../../../styles/helpers
+
+.title
+    margin-bottom: 32px
+    text-align: center
+
+.info
+    margin-bottom: 32px
+    text-align: center
+    +caption-2
+    color: $n4
+
+.variants
+    display: flex
+    flex-direction: column
+
+.radio
+    &:not(:last-child)
+        margin-bottom: 16px
+        padding-bottom: 16px
+        border-bottom: 1px solid $n6
+        +dark
+            border-color: $n3
+
+.button
+    width: 100%
+    margin-top: 32px

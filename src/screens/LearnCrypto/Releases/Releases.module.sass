@@ -1,0 +1,74 @@
+@import ../../../styles/helpers
+
+.head
+    display: flex
+    margin-bottom: 80px
+    +t
+        display: block
+        margin-bottom: 48px
+
+.stage
+    width: 352px
+    +t
+        width: 100%
+        margin-bottom: 20px
+
+.wrap
+    flex-shrink: 0
+    width: 640px
+    margin-left: auto
+    +d
+        width: 500px
+    +t
+        width: 100%
+
+.title
+    margin-bottom: 20px
+
+.info
+    max-width: 450px
+    margin-bottom: 64px
+    +body-2
+    color: $n3
+    +t
+        margin-bottom: 48px
+    +dark
+        color: $n7
+
+.nav
+    display: flex
+    +m
+        display: none
+
+.link
+    display: flex
+    padding: 6px 12px
+    border-radius: 14px
+    background: none
+    +button-2
+    color: $n4
+    transition: all .2s
+    &:hover
+        color: $n3
+        +dark
+            color: $n6
+    &.active
+        background: $n3
+        color: $n8
+        +dark
+            background: $n6
+            color: $n2
+    &:not(:last-child)
+        margin-right: 12px
+
+.dropdown
+    display: none
+    +m
+        display: block
+    
+.dropdownHead
+    background: transparent
+
+.item
+    &:not(:last-child)
+        margin-bottom: 80px

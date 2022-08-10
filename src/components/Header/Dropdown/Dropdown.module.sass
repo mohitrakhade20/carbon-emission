@@ -1,0 +1,144 @@
+@import ../../../styles/helpers
+
+.dropdown
+    position: relative
+    &.active
+        .head
+            color: $n2
+            svg
+                transform: rotate(180deg)
+                fill: $n2
+            +dark
+                color: $n8
+                svg
+                    fill: $n8
+        .body
+            transform: translate(-50%,0)
+            visibility: visible
+            opacity: 1
+            +m
+                display: block
+                transform: translate(0)
+
+.head
+    display: flex
+    align-items: center
+    +dm-sans
+    font-size: 14px
+    line-height: 40px
+    font-weight: 700
+    color: $n4
+    transition: color .2s
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
+    +m
+        width: 100%
+        padding: 0 22px
+        border-left: 2px solid transparent
+        +poppins
+        font-size: 24px
+        line-height: 64px
+        font-weight: 600
+    svg
+        margin-left: 4px
+        fill: $n4
+        transition: all .2s
+        +m
+            width: 32px
+            height: 32px
+            margin-left: auto
+    &:hover
+        color: $n2
+        svg
+            fill: $n2
+        +dark
+            color: $n8
+            svg
+                fill: $n8
+
+.body
+    position: absolute
+    top: calc(100% + 20px)
+    left: 50%
+    transform: translate(-50%, 10px)
+    width: 256px
+    padding: 0 16px
+    box-shadow: 0px 16px 48px rgba(31, 47, 70, 0.1)
+    border-radius: 12px
+    background: $n8
+    visibility: hidden
+    opacity: 0
+    transition: all .3s
+    +m
+        position: static
+        display: none
+        width: 100%
+        padding: 0 24px
+        box-shadow: none
+        visibility: visible
+        opacity: 1
+        transform: translate(0)
+    +dark
+        background: $n2
+        +m
+            background: none
+    &:before
+        content: ""
+        position: absolute
+        left: 50%
+        bottom: 100%
+        width: 24px
+        height: 12px
+        transform: translateX(-50%)
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='9' fill='none' viewBox='0 0 24 9'%3E%3Cpath d='M6.343 2.657L0 9h24l-6.343-6.343a8 8 0 0 0-11.314 0z' fill='%23fcfcfd'/%3E%3C/svg%3E") no-repeat 50% 100% / 100% auto
+        +m
+            display: none
+        +dark
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='9' fill='none' viewBox='0 0 24 9'%3E%3Cpath d='M6.343 2.657L0 9h24l-6.343-6.343a8 8 0 0 0-11.314 0z' fill='%2323262F'/%3E%3C/svg%3E")
+
+.link
+    display: flex
+    align-items: center
+    padding: 16px 0
+    +button-2
+    color: $n3
+    transition: color .2s
+    +m
+        height: 56px
+        padding: 0 16px
+        border-radius: 8px
+        +poppins
+        font-size: 16px
+        font-weight: 500
+    +dark
+        color: $n4
+        +m
+            color: $n8
+    svg
+        flex-shrink: 0
+        margin-right: 8px
+        fill: $n4
+        transition: fill .2s
+        +m
+            margin-right: 12px
+    &:hover,
+    &.active
+        +m
+            background: $n7
+        svg
+            fill: $n3
+            +m
+                fill: $n4
+        +dark
+            color: $n8
+            svg
+                fill: $n8
+            +m
+                background: $n3
+                svg
+                    fill: $n8
+    &:not(:last-child)
+        border-bottom: 1px solid $n6
+        +m
+            border: none
+        +dark
+            border-color: $n3

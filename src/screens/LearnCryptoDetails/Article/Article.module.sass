@@ -1,0 +1,88 @@
+@import ../../../styles/helpers
+
+.container
+    max-width: 888px
+
+.content
+    h1
+        font-size: 64px
+        line-height: 1
+        letter-spacing: -.02em
+        +m
+            font-size: 48px
+            line-height: (56/48)
+    h2
+        font-size: 48px
+        line-height: (56/48)
+        letter-spacing: -.02em
+        +m
+            font-size: 40px
+            line-height: (48/40)
+            letter-spacing: -.01em
+    h3
+        font-size: 40px
+        line-height: (48/40)
+        letter-spacing: -.01em
+        +m
+            font-size: 32px
+            line-height: (40/32)
+    h4
+        font-size: 32px
+        line-height: (40/32)
+        letter-spacing: -.01em
+    h1,
+    h2,
+    h3,
+    h4
+        position: relative
+        margin-bottom: 32px
+        padding-bottom: 32px
+        +dm-sans
+        font-weight: 700
+        &:after
+            content: ""
+            position: absolute
+            left: 0
+            bottom: 0
+            width: 166px
+            height: 2px
+            background: $n6
+            +dark
+                background: $n3
+        &:not(:first-child)
+            margin-top: 80px
+            +m
+                margin-top: 40px
+    p
+        +body-2
+        color: $n4
+        &:not(:last-child)
+            margin-bottom: 32px
+    figure
+        margin: 0 -76px
+        +t
+            margin-left: 0
+            margin-right: 0
+        img
+            width: 100%
+            border-radius: 16px
+            +m
+                min-height: 360px
+                object-fit: cover
+        &:not(:first-child)
+            margin-top: 80px
+            +m
+                margin-top: 40px
+
+.actions
+    position: relative
+    display: flex
+    justify-content: center
+    margin-top: 80px
+    +m
+        margin-top: 32px
+
+.actions > div,
+.favorite
+    &:not(:last-child)
+        margin-right: 32px

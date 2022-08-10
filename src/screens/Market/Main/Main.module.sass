@@ -1,0 +1,52 @@
+@import ../../../styles/helpers
+
+.main
+    position: relative
+    padding-top: 156px
+    min-height: 692px
+    background: #DECBE9
+    +m
+        min-height: auto
+        padding: 64px 0 112px
+    +dark
+        background: #18191D
+
+.wrap
+    position: relative
+    z-index: 3
+    max-width: 545px
+    margin-bottom: 143px
+    +m
+        margin-bottom: 8px
+
+.title
+    margin-bottom: 32px
+    +m
+        margin-bottom: 16px
+        font-size: 40px
+        line-height: 48px
+
+.text
+    +body-1
+    color: $n3
+    +m
+        font-size: 16px
+    +dark
+        color: $n5
+    strong
+        font-weight: 600
+
+.bg
+    position: absolute
+    top: 0
+    right: calc(50% - 760px)
+    width: 780px
+    pointer-events: none
+    +d
+        right: calc(50% - 820px)
+    +m
+        position: static
+        width: auto
+        margin: 0 -76px 24px -30px
+    img
+        width: 100%

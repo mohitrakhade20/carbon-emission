@@ -1,0 +1,104 @@
+@import ../../../styles/helpers
+
+.main
+    display: flex
+    align-items: center
+    padding: 20px
+    background: $n8
+    border-radius: 4px
+    +t
+        display: block
+        margin-bottom: 16px
+    +m
+        padding: 16px
+    +dark
+        background: #17181B
+
+.details
+    display: flex
+    align-items: center
+    +t
+        margin-bottom: 16px
+    +m
+        display: block
+        margin-bottom: 24px
+
+.box
+    .content
+        display: flex
+        align-items: center
+        +caption-bold-2
+        color: $n4
+        svg
+            margin-right: 4px
+            fill: $n4
+    &:not(:last-child)
+        margin-right: 32px
+        +m
+            margin: 0 0 8px
+
+.line
+    display: flex
+    align-items: center
+    margin-bottom: 4px
+
+.info
+    +body-bold-1
+    color: $n1
+    +dark
+        color: $n8
+
+.category
+    margin-left: 4px
+    padding: 7px 8px 5px
+    border-radius: 12px
+
+.price
+    +body-bold-1
+    color: $p3
+
+.list
+    display: flex
+    margin-left: auto
+    +t
+        margin: 0
+    +m
+        flex-wrap: wrap
+        margin: -12px 0 0
+
+.item
+    flex: 0 0 160px
+    width: 160px
+    padding-right: 24px
+    +d
+        flex: 0 0 auto
+        width: auto
+    +t
+        flex: 1 0 auto
+    +m
+        flex: 0 0 50%
+        width: 50%
+        margin: 12px 0
+    .content
+        font-weight: 500
+        color: $n1
+        +dark
+            color: $n8
+    &:not(:last-child)
+        margin-right: 24px
+        border-right: 1px solid $n6
+        +dark
+            border-color: $n2
+        +m
+            margin: 12px 0 0
+            border: none
+
+.subtitle
+    display: flex
+    align-items: center
+    margin-block-end: 4px
+    +caption-2
+    color: $n4
+    svg
+        margin-right: 4px
+        fill: $n4

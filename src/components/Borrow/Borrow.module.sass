@@ -1,0 +1,72 @@
+@import ../../styles/helpers
+
+.title
+    margin-bottom: 32px
+    padding-right: 56px
+    +m
+        +poppins
+        font-size: 24px
+        line-height: 32px
+        font-weight: 600
+    svg
+        position: relative
+        top: -2px
+        margin-right: 16px
+        +m
+            top: 0
+        +dark
+            fill: $n8
+
+.list,
+.field,
+.box,
+.percent
+    &:not(:last-child)
+        margin-bottom: 32px
+
+.line
+    display: flex
+    justify-content: space-between
+    &:not(:last-child)
+        margin-bottom: 16px
+
+.category
+    font-weight: 500
+    color: $n3
+    +dark
+        color: $n6
+
+.details
+    text-align: right
+    +m
+        position: relative
+        top: 2px
+
+.price
+    +body-bold-2
+    +m
+        font-size: 14px
+
+.note
+    color: $n4
+
+.percent
+    display: flex
+    justify-content: space-between
+    .button
+        height: 24px
+        padding: 0 16px
+        border-radius: 12px
+
+.box
+    position: relative
+    .button
+        position: absolute
+        top: 36px
+        right: 16px
+        height: 24px
+        padding: 0 16px
+        border-radius: 12px
+
+.borrow > .button
+    width: 100%

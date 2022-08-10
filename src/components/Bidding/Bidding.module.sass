@@ -1,0 +1,161 @@
+@import ../../styles/helpers
+
+.head
+    padding: 40px 0
+    +m
+        padding: 16px 0 32px
+    .container
+        align-items: center
+
+.container
+    display: flex
+    +d
+        padding: 0 40px
+    +m
+        display: block
+        padding: 0 32px
+
+.title
+    margin-right: auto
+    +m
+        margin: 0 0 16px
+        font-size: 32px
+        line-height: 40px
+
+.info
+    +caption-2
+    font-weight: 500
+    color: $n4
+
+.link
+    margin-left: 8px
+    color: $n2
+    transition: color .2s
+    svg
+        fill: $n2
+        transition: fill .2s
+    +dark
+        color: $n6
+        svg
+            fill: $n6
+    &:hover
+        color: $p1
+        svg
+            fill: $p1
+
+.body
+    padding: 80px 0 136px
+    background: #F8F8F9
+    +d
+        padding-bottom: 80px
+    +t
+        padding-top: 48px
+    +m
+        padding: 32px 0
+        border-top: 1px solid $n6
+        background: none
+    +dark
+        background: none
+        box-shadow: inset 0 1px 0 0 $n2
+        +m
+            border: none
+    .container
+        +t
+            display: block
+
+.steps
+    flex-shrink: 0
+    width: 220px
+    margin-right: auto
+    +t
+        display: none
+
+.step
+    position: relative
+    display: flex
+    align-items: center
+    height: 48px
+    padding: 0 8px
+    border-radius: 24px
+    +button-2
+    color: $n4
+    transition: all .2s
+    &.next
+        color: $n2
+        .number
+            border-color: $p4
+    &.active
+        background: $n8
+        box-shadow: 0px 4px 16px -8px rgba(15, 15, 15, 0.1)
+        color: $n2
+        .number
+            border-color: $p4
+            &:after
+                opacity: 1
+    &:not(:last-child)
+        margin-bottom: 24px
+        &:after
+            content: ""
+            position: absolute
+            top: 100%
+            left: 23px
+            height: 24px
+            border-left: 2px dashed $n5
+    +dark
+        &.next
+            color: $n8
+        &.active
+            background: $n2
+            color: $n8
+            &:not(:last-child)
+                &:after
+                    border-color: $n4
+
+.number
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 32px
+    height: 32px
+    margin-right: 16px
+    border: 2px solid $n6
+    border-radius: 50%
+    transition: all .2s
+    +dark
+        border-color: $n4
+    &:after
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        border-radius: 50%
+        background: $p4 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3E%3Cpath d='M4 8l2.667 2.667L12 5.333' stroke='%23fcfcfd' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat 50% 50% / 16px auto
+        opacity: 0
+        transition: opacity .2s
+
+.wrapper
+    width: 736px
+    padding: 40px
+    box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1)
+    border-radius: 16px
+    background: $n8
+    +d
+        flex-grow: 1
+        width: auto
+        margin-left: 64px
+        padding: 32px
+    +t
+        margin-left: 0
+        padding: 40px
+    +m
+        padding: 0
+        box-shadow: none
+        background: none
+        border-radius: 0
+    +dark
+        background: #18191D
+        +m
+            background: none

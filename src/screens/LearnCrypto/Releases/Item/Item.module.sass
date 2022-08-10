@@ -1,0 +1,79 @@
+@import ../../../../styles/helpers
+
+.item
+    position: relative
+    display: flex
+    flex-direction: row-reverse
+    color: $n2
+    transition: color .2s
+    +t
+        display: block
+    +dark
+        color: $n8
+    &:hover
+        color: $p1
+        .arrow
+            transform: translateX(10px)
+            svg
+                fill: $p1
+
+.preview
+    flex-shrink: 0
+    width: 640px
+    margin-left: auto
+    +d
+        width: 500px
+    +t
+        width: 100%
+        margin-bottom: 32px
+    img
+        width: 100%
+        border-radius: 16px
+        +t
+            min-height: 240px
+            object-fit: cover
+
+.details
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    width: 352px
+    +d
+        width: auto
+        padding-right: 32px
+    +t
+        padding-right: 0
+
+.category
+    margin-bottom: auto
+
+.title
+    margin: 24px 0 8px
+    +t
+        margin-top: 16px 
+
+.currency
+    margin-bottom: 20px
+    +body-2
+    color: $n3
+    +dark
+        color: $n5
+
+.content
+    margin-bottom: auto
+    color: $n4
+
+.arrow
+    position: absolute
+    top: calc(100% + 14px)
+    left: 0
+    width: 24px
+    height: 24px
+    transition: transform .2s
+    +t
+        position: static
+        margin-top: 16px
+    svg
+        fill: $n4
+        transition: fill .2s
+    

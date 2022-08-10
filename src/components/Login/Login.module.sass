@@ -1,0 +1,98 @@
+@import ../../styles/helpers
+
+.login
+    display: flex
+    +t
+        display: block
+
+.col
+    position: relative
+    &:first-child
+        flex-shrink: 0
+        width: 512px
+        min-height: 100vh
+        background-color: $n2
+        background-repeat: no-repeat
+        background-position: 100% 50%
+        background-size: cover
+        +x
+            width: 420px
+        +d
+            width: 350px
+        +t
+            width: auto
+            min-height: auto
+            background: none !important
+        +dark
+            background-color: $n2
+    &:nth-child(2)
+        position: relative
+        display: flex
+        flex-grow: 1
+        padding: 148px 64px 132px
+        +w
+            padding: 124px 48px 76px
+        +t
+            min-height: 100vh
+            padding-bottom: 100px
+        +m
+            flex-direction: column
+            padding: 100px 32px 32px
+
+.logo
+    position: absolute
+    top: 64px
+    left: 80px
+    width: 156px
+    +w
+        top: 48px
+        left: 64px
+    +m
+        top: 40px
+        left: 50%
+        transform: translateX(-50%)
+    img
+        width: 100%
+        &:first-child
+            display: none
+            +t
+                display: inline-block
+                +dark
+                    display: none
+        &:nth-child(2)
+            +t
+                display: none
+                +dark
+                    display: inline-block
+                     
+
+.head
+    position: absolute
+    top: 80px
+    right: 80px
+    left: 80px
+    text-align: right
+    +button-2
+    +w
+        top: 56px
+        right: 64px
+        left: 64px
+    +t
+        right: 48px
+    +m
+        position: static
+        margin-bottom: 32px
+        text-align: center
+
+.link
+    margin-left: 5px
+    color: $p1
+    transition: color .2s
+    &:hover
+        color: darken($p1, 10)
+
+.wrap
+    width: 380px
+    margin: auto
+    +a
+        width: 100%

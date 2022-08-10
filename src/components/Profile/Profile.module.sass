@@ -1,0 +1,194 @@
+@import ../../styles/helpers
+
+.profile
+    display: flex
+    flex-direction: column
+    flex-grow: 1
+
+.head
+    padding: 40px 0
+    border-bottom: 1px solid #F1F2F4
+    +m
+        padding: 16px 0 32px
+    +dark
+        border-color: $n2
+    .container
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        +d
+            padding: 0 40px
+        +m
+            display: block
+            padding: 0 32px
+
+.title
+    margin-right: auto
+    +d
+        font-size: 40px
+        line-height: 48px
+        letter-spacing: -.01em
+    +t
+        font-size: 32px
+        line-height: 40px
+
+.breadcrumbs
+    margin-left: 40px
+    +m
+        margin: 16px 0 0
+
+.body
+    flex-grow: 1
+    padding: 80px 0
+    background: #F8F8F9
+    +d
+        padding-top: 64px
+    +t
+        padding-top: 40px
+    +m
+        padding: 16px 0
+    +dark
+        background: none
+    .container
+        display: flex
+        align-items: flex-start
+        +d
+            padding: 0 40px
+        +t
+            display: block
+        +m
+            padding: 0 16px
+
+.sidebar
+    flex-shrink: 0
+    width: 288px
+    margin-right: 80px
+    +x
+        margin-right: 48px
+    +d
+        width: 224px
+        margin-right: 32px
+    +t
+        width: 100%
+        margin-bottom: 32px
+    +m
+        margin-bottom: 24px
+
+.wrapper
+    flex-grow: 1
+    padding: 40px
+    border-radius: 16px
+    background: $n8
+    box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1)
+    +t
+        padding: 40px 32px
+    +m
+        padding: 16px
+    +dark
+        background: #18191D
+
+.dropdown
+    +t
+        position: relative
+        z-index: 5
+        &.active
+            .top
+                &:after
+                    transform: translateY(-50%) rotate(180deg)
+            .group
+                visibility: visible
+                opacity: 1
+
+.top
+    display: none
+    +t
+        position: relative
+        display: flex
+        align-items: center
+        height: 48px
+        padding: 0 64px 0 16px
+        border-radius: 24px
+        background: $n8
+        +button-2
+        +dark
+            background: $n2
+        svg
+            margin-right: 8px
+            fill: $n2
+            +dark
+                fill: $n8
+        &:after
+            content: ""
+            position: absolute
+            top: 50%
+            right: 16px
+            width: 24px
+            height: 24px
+            transform: translateY(-50%)
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 24'%3E%3Cpath fill-rule='evenodd' d='M16.207 9.793a1 1 0 0 0-1.414 0L12 12.586 9.207 9.793a1 1 0 0 0-1.414 1.414l3.5 3.5a1 1 0 0 0 1.414 0l3.5-3.5a1 1 0 0 0 0-1.414z' fill='%23777e91'/%3E%3C/svg%3E") no-repeat 50% 50% / 100% auto
+            transition: transform .2s
+
+.group
+    +t
+        position: absolute
+        top: calc(100% + 4px)
+        left: 0
+        right: 0
+        z-index: 2
+        padding: 16px
+        background: $n8
+        border-radius: 24px
+        box-shadow: 0px 40px 32px -24px rgba(15, 15, 15, 0.12)
+        visibility: hidden
+        opacity: 0
+        transition: all .2s
+        +dark
+            background: $n2
+
+.link
+    display: flex
+    align-items: center
+    height: 40px
+    padding: 0 16px
+    +button-2
+    color: $n4
+    transition: color .2s
+    +d
+        padding: 0
+    svg
+        margin-right: 8px
+        fill: $n4
+        transition: fill .2s
+    &:hover,
+    &.active
+        color: $n2
+        svg
+            fill: $n2
+        +dark
+            color: $n8
+            svg
+                fill: $n8
+    &:not(:last-child)
+        margin-bottom: 12px
+        +t
+            margin-bottom: 4px
+    &:not(:last-child).separator
+        position: relative
+        margin-bottom: 25px
+        +t
+            margin-bottom: 4px
+        &:after
+            content: ""
+            position: absolute
+            left: 16px
+            right: 16px
+            top: calc(100% + 12px)
+            height: 1px
+            background: $n6
+            +d
+                left: 0
+                right: 0
+            +t
+                display: none
+            +dark
+                background: $n2

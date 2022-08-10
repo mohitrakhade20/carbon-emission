@@ -1,0 +1,146 @@
+@import ../../../styles/helpers
+
+.balance
+    border-radius: 4px
+    background: $n8
+    +dark
+        background: #17181B
+
+.head
+    display: flex
+    align-items: center
+    padding: 16px 16px 12px
+
+.sorting
+    display: flex
+    align-items: center
+    margin-right: auto
+
+.direction
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    flex-shrink: 0
+    width: 32px
+    height: 32px
+    border-radius: 4px
+    transition: all .2s
+    span
+        width: 12px
+        height: 2px
+        border-radius: 1
+        &:not(:last-child)
+            margin-bottom: 2px
+    &:hover,
+    &.active
+        background: #F1F2F4
+        +dark
+            background: $n2
+    &:not(:last-child)
+        margin-right: 12px
+
+.dropdownHead
+    height: 32px
+    padding: 0 36px 0 8px
+    background: #F1F2F4
+    border-radius: 4px
+    box-shadow: none
+    font-size: 12px
+    line-height: 32px
+
+.dropdownArrow
+    right: 0
+    svg
+        fill: $n4
+
+.dropdownBody
+    border-radius: 4px
+
+.dropdownOption
+    padding: 4px 8px
+    font-size: 12px
+
+.top
+    display: flex
+    margin-bottom: 4px
+    padding: 4px 16px
+    +caption-bold-2
+    color: $n4
+
+.item
+    position: relative
+    display: flex
+    padding: 4px 16px
+    +caption-2
+    font-weight: 500
+    &.negative
+        .line
+            background: rgba($p3, .15)
+        .price
+            color: $p3
+    &.positive
+        .line
+            background: rgba($p4, .15)
+        .price
+            color: $p4
+    &:not(:last-child)
+        margin-bottom: 4px
+    &:nth-child(n+10)
+        +d
+            display: none
+        +t
+            display: flex
+
+.price
+    font-weight: 600
+
+.price,
+.amount
+    flex-shrink: 0
+    width: 70px
+
+.amount
+    text-align: right
+
+.total
+    flex-grow: 1
+    text-align: right
+
+.line
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+
+.statistics
+    display: flex
+    align-items: center
+    margin-top: 12px
+    padding: 12px 16px
+    +body-bold-2
+    +d
+        margin-top: 4px
+    +t
+        margin-top: 12px
+    svg
+        margin-left: 8px
+    &:not(:last-child)
+        margin-bottom: 12px
+        +d
+            margin-bottom: 0
+        +t
+            margin-bottom: 12px
+    &.positive
+        .currency
+            color: $p4
+        svg
+            fill: $p4
+    &.negative
+        .currency
+            color: $p3
+        svg
+            fill: $p3
+    
+.money
+    margin-left: 8px

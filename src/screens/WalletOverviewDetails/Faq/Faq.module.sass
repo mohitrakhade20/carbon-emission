@@ -1,0 +1,58 @@
+@import ../../../styles/helpers
+
+.faq
+    padding: 32px
+    +m
+        padding: 24px
+
+.list
+    display: flex
+    flex-wrap: wrap
+    margin-top: -32px
+    +m
+        display: block
+        margin-top: -20px
+
+.item
+    display: flex
+    align-items: center
+    width: 33.333%
+    flex: 0 0 33.333%
+    margin-top: 32px
+    padding-right: 20px
+    color: $n2
+    transition: color .2s
+    +x
+        width: 50%
+        flex: 0 0 50%
+    +m
+        width: 100%
+        margin-top: 20px
+        padding-right: 0
+    +dark
+        color: $n8
+    &:hover
+        color: $p1
+
+.preview
+    flex-shrink: 0
+    width: 128px
+    margin-right: 20px
+    +m
+        margin-right: 12px
+    img
+        width: 100%
+        border-radius: 8px
+
+.details
+    flex-grow: 1
+
+.category
+    +caption-2
+    color: $n4
+
+.title
+    font-weight: 500
+
+.button
+    margin-top: 32px

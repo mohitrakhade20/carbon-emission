@@ -1,0 +1,207 @@
+@import ../../../styles/helpers
+
+.section
+    +m
+        position: relative
+        padding-bottom: 80px
+
+.head
+    display: flex
+    align-items: flex-start
+    margin-bottom: 80px
+    +d
+        margin-bottom: 48px
+    +m
+        display: block
+    .button
+        flex-shrink: 0
+        margin-left: 40px
+        +m
+            position: absolute
+            left: 32px
+            right: 32px
+            bottom: 0
+            width: calc(100% - 64px)
+            margin: 0
+
+.wrap
+    flex-grow: 1
+
+.title
+    margin-bottom: 40px
+    +m
+        margin-bottom: 24px
+        text-align: center
+
+.nav
+    display: flex
+    +m
+        margin: 0 -32px
+        overflow: auto
+        overflow-x: auto 
+        -ms-overflow-style: none
+        scrollbar-width: none
+        -webkit-overflow-scrolling: touch
+        &::-webkit-scrollbar
+            display: none 
+        &:before,
+        &:after
+            content: ""
+            flex-shrink: 0
+            width: 32px
+            height: 1px
+
+.link
+    display: flex
+    padding: 6px 12px
+    border-radius: 14px
+    background: none
+    +button-2
+    color: $n4
+    transition: all .2s
+    +m
+        flex-shrink: 0
+    &:hover
+        color: $n3
+        +dark
+            color: $n6
+    &.active
+        background: $n3
+        color: $n8
+        +dark
+            background: $n3
+            color: $n8
+    &:not(:last-child)
+        margin-right: 24px
+        +m
+            margin-right: 20px
+
+.wrapper
+    margin: -32px -18px 0
+    +d
+        margin: 0 -16px
+    &:after
+        content: " "
+        display: table
+        clear: both
+        +d
+            display: none
+
+.item
+    width: calc(50% - 36px)
+    margin: 32px 18px 0
+    float: right
+    color: $n2
+    +d
+        float: none
+        width: 100%
+        margin: 0
+    +dark
+        color: $n8
+    &:hover
+        .preview
+            img
+                transform: scale(1.1)
+        .subtitle
+            color: $p1
+    &:first-child
+        float: left
+        +d
+            float: none
+        .preview
+            margin-bottom: 40px
+            border-radius: 20px
+            +d
+                margin-bottom: 24px
+                border-radius: 16px
+        .subtitle
+            margin-bottom: 16px
+            +dm-sans
+            font-size: 32px
+            line-height: 40px
+            font-weight: 700
+            letter-spacing: -.01em
+            +d
+                +poppins
+                font-weight: 600
+                font-size: 24px
+                line-height: 32px
+                letter-spacing: 0
+            +m
+                margin-bottom: 8px
+                font-size: 16px
+        .content
+            font-size: 16px
+            line-height: 1.5
+            +d
+                font-size: 14px
+    &:not(:first-child)
+        display: flex
+        flex-direction: row-reverse
+        padding-left: 60px
+        +d
+            display: block
+            padding: 0
+        .preview
+            flex: 0 0 45.65%
+            border-radius: 16px
+        .subtitle
+            margin-bottom: 16px
+            +body-bold-2
+            +d
+                margin-bottom: 0
+                font-size: 24px
+                line-height: 32px
+            +m
+                margin-bottom: 8px
+                font-size: 16px
+        .content
+            margin-bottom: auto
+
+.preview
+    position: relative
+    overflow: hidden
+    +d
+        &:before
+            content: ""
+            display: block
+            padding-bottom: 77%
+    img
+        width: 100%
+        transition: transform 1s
+        +d
+            position: absolute
+            top: 0
+            left: 0
+            height: 100%
+            object-fit: cover
+
+.line
+    display: flex
+    .button
+        flex-shrink: 0
+        margin-left: 32px
+        +d
+            display: none
+
+.subtitle
+    transition: color .2s
+
+.content
+    color: $n4
+
+.details
+    display: flex
+    flex-direction: column
+    flex-grow: 1
+    padding-right: 16px
+    +d
+        display: block
+        padding: 0
+
+.date
+    margin-top: 24px
+    color: $n4
+    +d
+        display: none
+

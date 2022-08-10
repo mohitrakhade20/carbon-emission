@@ -1,0 +1,149 @@
+@import ../../../styles/helpers
+
+.settings
+    position: relative
+    +m
+        position: static
+    &.active
+        .head
+            color: $n2
+            svg
+                transform: rotate(180deg)
+                fill: $n2
+            +dark
+                color: $n8
+                svg
+                    fill: $n4
+        .body
+            transform: translate(-50%,0)
+            visibility: visible
+            opacity: 1
+            +m
+                transform: translate(0,0)
+
+.head
+    display: flex
+    align-items: center
+    +dm-sans
+    text-transform: uppercase
+    font-size: 14px
+    line-height: 40px
+    font-weight: 700
+    color: $n2
+    transition: color .2s
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
+    +dark
+        color: $n8
+    svg
+        margin-left: 12px
+        fill: $n4
+        transition: all .2s
+        +t
+            margin-left: 4px
+    &:hover
+        svg
+            fill: $n2
+            +dark
+                fill: $n4
+
+.body
+    position: absolute
+    top: calc(100% + 20px)
+    left: 50%
+    z-index: 2
+    transform: translate(-50%, 10px)
+    width: 365px
+    padding: 16px
+    box-shadow: 0px 16px 48px rgba(31, 47, 70, 0.1)
+    border-radius: 12px
+    background: $n8
+    visibility: hidden
+    opacity: 0
+    transition: all .3s
+    +m
+        top: 100%
+        left: 16px
+        right: 16px
+        width: auto
+        transform: translate(0, 10px)
+    +dark
+        background: $n2
+    &:before
+        content: ""
+        position: absolute
+        left: 50%
+        bottom: 100%
+        width: 24px
+        height: 12px
+        transform: translateX(-50%)
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='9' fill='none' viewBox='0 0 24 9'%3E%3Cpath d='M6.343 2.657L0 9h24l-6.343-6.343a8 8 0 0 0-11.314 0z' fill='%23fcfcfd'/%3E%3C/svg%3E") no-repeat 50% 100% / 100% auto
+        +m
+            left: auto
+            right: 208px
+        +dark
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='9' fill='none' viewBox='0 0 24 9'%3E%3Cpath d='M6.343 2.657L0 9h24l-6.343-6.343a8 8 0 0 0-11.314 0z' fill='%2323262F'/%3E%3C/svg%3E")
+
+.row
+    display: flex
+    margin: 0 -24px
+
+.col
+    flex: 0 0 50%
+    padding: 0 24px
+    &:first-child
+        border-right: 1px solid $n6
+        +dark
+            border-color: $n3
+
+.category
+    margin-bottom: 4px
+    +caption-2
+    font-weight: 500
+    color: $n4
+
+.menu
+    display: flex
+    flex-direction: column
+
+.language,
+.currency
+    padding: 12px 0
+    +button-2
+    color: $n4
+    cursor: pointer
+    transition: color .2s
+    &:hover,
+    &.active
+        color: $n2
+        +dark
+            color: $n8
+    &:not(:last-child)
+        border-bottom: 1px solid $n6
+        +dark
+            border-color: $n3
+
+.currency
+    position: relative
+    padding-left: 28px
+    &:before
+        content: ""
+        position: absolute
+        top: 50%
+        left: 6px
+        width: 8px
+        height: 8px
+        transform: translateY(-50%)
+        border-radius: 50%
+        background: $n6
+        transition: background .2s
+        +dark
+            background: $n3
+    &:hover,
+    &.active
+        &:before
+            background: $n2
+            +dark
+                background: $n8
+
+.flag
+    margin-right: 8px

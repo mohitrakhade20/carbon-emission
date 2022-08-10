@@ -1,0 +1,111 @@
+@import ../../../styles/helpers
+
+.control
+    display: flex
+    justify-content: space-between
+    margin-bottom: 64px
+    +m
+        display: block
+        margin-bottom: 20px
+
+.back
+    display: flex
+    align-items: center
+    +poppins
+    +body-bold-1
+    +dark
+        color: $n8
+    svg
+        margin-right: 16px
+        fill: $n4
+        transition: transform .2s
+    &:hover
+        svg
+            transform: translateX(-2px)
+
+.money
+    display: flex
+    align-items: center
+    +body-bold-2
+    +m
+        display: none
+    img
+        margin-left: 12px
+        width: 24px
+
+.options
+    display: flex
+    justify-content: space-between
+    margin-bottom: 48px
+    padding: 24px 36px
+    border-radius: 16px
+    background: $n7
+    +m
+        display: block
+        margin-bottom: 32px
+        padding: 24px
+    +dark
+        background: $n2
+
+.option
+    display: flex
+    &:not(:last-child)
+        +m
+            margin-bottom: 24px
+
+.icon
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-shrink: 0
+    width: 40px
+    height: 40px
+    margin-right: 10px
+    border-radius: 50%
+    svg
+        fill: $n8
+
+.category
+    +caption-2
+    color: $n4
+
+.content
+    font-weight: 500
+
+.info
+    margin-bottom: 48px
+    +body-2
+    +m
+        margin-bottom: 32px
+
+.row
+    display: flex
+    justify-content: space-between
+    &:first-child
+        padding-bottom: 12px
+        border-bottom: 1px solid $n6
+        +body-bold-2
+        +dark
+            border-color: $n3
+    &:not(:first-child)
+        .cell
+            &:first-child
+                color: $n4
+    &:not(:last-child)
+        margin-bottom: 12px
+
+.cell
+    &:nth-child(2)
+        +body-bold-2
+
+.btns
+    display: flex
+    justify-content: space-between
+    margin-top: 48px
+    +m
+        display: block
+        margin-top: 32px
+        .button
+            width: 100%
+            &:not(:last-child)
+                margin-bottom: 10px

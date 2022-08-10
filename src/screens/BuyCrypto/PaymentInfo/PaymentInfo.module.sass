@@ -1,0 +1,106 @@
+@import ../../../styles/helpers
+
+.control
+    display: flex
+    justify-content: space-between
+    margin-bottom: 64px
+    +m
+        display: block
+        margin-bottom: 20px
+
+.back
+    display: flex
+    align-items: center
+    +poppins
+    +body-bold-1
+    +dark
+        color: $n8
+    svg
+        margin-right: 16px
+        fill: $n4
+        transition: transform .2s
+    &:hover
+        svg
+            transform: translateX(-2px)
+
+.money
+    display: flex
+    align-items: center
+    +body-bold-2
+    +m
+        display: none
+    img
+        margin-left: 12px
+        width: 24px
+
+.options
+    display: flex
+    justify-content: space-between
+    margin-bottom: 48px
+    padding: 24px 36px
+    border-radius: 16px
+    background: $n7
+    +m
+        display: block
+        margin-bottom: 32px
+    +dark
+        background: $n2
+
+.option
+    display: flex
+    &:not(:last-child)
+        +m
+            margin-bottom: 32px
+
+.icon
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-shrink: 0
+    width: 40px
+    height: 40px
+    margin-right: 10px
+    border-radius: 50%
+    svg
+        fill: $n8
+
+.category
+    +caption-2
+    color: $n4
+
+.content
+    font-weight: 500
+
+.line
+    display: flex
+    align-items: center
+    margin-bottom: 40px
+
+.subtitle
+    margin-right: auto
+    +body-bold-1
+
+.cards
+    display: flex
+    align-items: center
+
+.fieldset
+    & > .field
+        margin-bottom: 32px
+    
+.row
+    display: flex
+    margin: 0 -8px
+    .field
+        flex: 0 0 calc(50% - 16px)
+        width: calc(50% - 16px)
+        margin: 0 8px
+
+.checkbox
+    margin-top: 32px
+
+.btns
+    margin-top: 48px
+    text-align: right
+    +m
+        margin-top: 32px

@@ -1,0 +1,233 @@
+@import ../../styles/helpers
+
+.header
+    position: relative
+    z-index: 10
+    padding: 20px 0
+    box-shadow: inset 0 -1px 0 $n6
+    +m
+        padding: 32px 0 24px
+        box-shadow: none
+    +dark
+        box-shadow: inset 0 -1px 0 $n2
+        +m
+            box-shadow: none
+    &.wide
+        box-shadow: none
+        .container
+            max-width: 100%
+            padding: 0 20px
+            +m
+                padding: 0 24px
+
+.container
+    display: flex
+    align-items: center
+    +d
+        padding: 0 40px
+    +t
+        padding: 0 20px
+    +m
+        padding: 0 24px
+
+.logo
+    margin-right: 32px
+    +t
+        margin-right: 16px
+    +m
+        position: relative
+        z-index: 15
+        margin-right: auto
+    img
+        width: 136px
+        +t
+            width: 42px
+
+.picDesktop
+    +t
+        display: none
+
+.picMobile
+    display: none
+    +t
+        display: inline-block
+
+.wrapper
+    display: flex
+    align-items: center
+    flex-grow: 1
+    padding-left: 32px
+    border-left: 1px solid $n6
+    +x
+        padding-left: 0
+        border: none
+    +m
+        flex-grow: 0
+    +dark
+        border-color: $n3
+    .theme
+        +d
+            display: none
+    & > .btns
+        +m
+            display: none
+
+.wrap
+    margin-right: auto
+    +m
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 10
+        display: flex
+        flex-direction: column
+        width: 100%
+        height: 100vh
+        padding: 100px 0 32px
+        background: $n8
+        visibility: hidden
+        opacity: 0
+        transition: all .2s
+        +dark
+            background: $n1
+        &.visible
+            visibility: visible
+            opacity: 1
+    & > .button
+        display: none
+        +m
+            display: flex
+            margin: auto 24px 0
+    .btns
+        display: none
+        +m
+            display: flex
+
+.nav
+    display: flex
+    +m
+        flex-direction: column
+
+.item,
+.nav > div
+    &:not(:last-child)
+        margin-right: 40px
+        +d
+            margin-right: 32px
+        +t
+            margin-right: 20px
+        +m
+            margin: 0
+
+.item
+    +dm-sans
+    font-size: 14px
+    line-height: 40px
+    font-weight: 700
+    color: $n4
+    transition: all .2s
+    +m
+        padding: 0 22px
+        border-left: 2px solid transparent
+        +poppins
+        font-size: 24px
+        line-height: 64px
+        font-weight: 600
+    &:hover,
+    &.active
+        color: $n2
+        +dark
+            color: $n8
+        +m
+            border-color: $p1
+
+.control
+    display: flex
+    align-items: center
+    .button
+        +m
+            display: none
+
+.settings
+    margin-right: 32px
+    +d
+        margin-right: 16px
+    +t
+        margin-right: 4px
+    
+.activity,
+.notifications,
+.control .button,
+.theme
+    margin-right: 20px
+    +d
+        margin-right: 16px
+    +t
+        margin-right: 8px
+    +m
+        margin-right: 12px
+
+.activity
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-shrink: 0
+    width: 40px
+    height: 40px
+    +m
+        margin-right: 4px
+    svg
+        fill: $n4
+        transition: fill .2s
+    &:hover,
+    &.active
+        svg
+            fill: $n2
+            +dark
+                fill: $n8
+
+.btns
+    display: flex
+    +m
+        margin: auto 16px 0
+    .button
+        +m
+            flex: 0 0 calc(50% - 16px)
+            width: calc(50% - 16px)
+            margin: 0 8px
+        &:not(:last-child)
+            margin-right: 8px
+            +m
+                margin-right: 8px
+
+.burger
+    display: none
+    +m
+        display: block
+        position: relative
+        z-index: 15
+        margin-left: 12px
+        width: 32px
+        height: 32px
+        background: none
+        -webkit-tap-highlight-color: rgba(0,0,0,0)
+        &.active
+            &:before
+                transform: translateY(0) rotate(-45deg)
+            &:after
+                transform: translateY(0) rotate(45deg)
+        &:before,
+        &:after
+            content: ''
+            position: absolute
+            top: 16px
+            left: 6px
+            width: 20px
+            height: 2px
+            background: $n4
+            border-radius: 2px
+            transition: transform .2s
+        &:before
+            transform: translateY(-4px)
+        &:after
+            transform: translateY(3px)

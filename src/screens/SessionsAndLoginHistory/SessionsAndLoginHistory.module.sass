@@ -1,0 +1,66 @@
+@import ../../styles/helpers
+
+.section
+    &:not(:last-child)
+        margin-bottom: 48px
+
+.title
+    margin-bottom: 32px
+    +body-bold-1
+    +m
+        margin-bottom: 16px
+
+.table
+    display: table
+    width: 100%
+
+.row
+    display: table-row
+    &:first-child
+        .col
+            border-bottom: 1px solid $n7
+            +caption-bold-2
+            color: $n3
+            +dark
+                border-color: $n2
+                color: $n5
+    &:not(:first-child):not(:last-child)
+        .col
+            border-bottom: 1px solid $n6
+            +dark
+                border-color: $n3
+
+.col
+    display: table-cell
+    padding-top: 16px 
+    padding-bottom: 16px
+    &:nth-child(2)
+        padding-left: 32px
+        padding-right: 32px
+    &:last-child
+        text-align: right
+
+.content
+    font-weight: 500
+
+.note
+    color: $n4
+
+.location,
+.status
+    min-width: 64px
+    text-align: center
+
+.location
+    +dark
+        background: $n8
+        color: $n2
+
+.btns
+    margin-top: 36px
+    text-align: right
+    +m
+        margin-top: 16px
+        .button
+            width: 100%
+

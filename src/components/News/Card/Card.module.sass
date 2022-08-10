@@ -1,0 +1,74 @@
+@import ../../../styles/helpers
+
+.card
+    position: relative
+    display: flex
+    width: 100%
+    min-height: 544px
+    padding: 80px 96px
+    border-radius: 24px
+    background: $n8
+    box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1)
+    +d
+        padding: 80px
+    +t
+        display: block
+        padding: 0
+        min-height: auto
+        box-shadow: none
+        background: none
+    +dark
+        background: $n2
+        +t
+            background: none
+
+.preview
+    position: absolute
+    top: -30px
+    right: -30px
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 563px
+    height: 563px
+    +d
+        top: 20px
+        width: 500px
+        height: 500px
+    +t
+        position: static
+        margin: 0 auto
+    +a
+        width: 100%
+        height: 320px
+    img
+        max-width: 100%
+        max-height: 100%
+
+.wrap
+    position: relative
+    z-index: 3
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    max-width: 352px
+    +t
+        display: block
+        max-width: 500px
+        margin: 0 auto
+        text-align: center
+
+.stage
+    margin-top: auto
+
+.title
+    margin-bottom: 16px
+    +body-1
+
+.content
+    margin-bottom: auto
+    +body-2
+    color: $n4
+
+.button
+    margin-top: 48px

@@ -1,0 +1,47 @@
+@import ../../../styles/helpers
+
+.main
+    padding-top: 80px
+    +m
+        padding-top: 64px
+
+.head
+    max-width: 730px
+    margin: 0 auto 80px
+    text-align: center
+
+.title
+    margin-bottom: 16px
+
+.info
+    margin-bottom: 32px
+    +body-1
+    color: $n4
+    +m
+        font-size: 16px
+
+.btns
+    display: flex
+    justify-content: center
+
+.button
+    &:not(:last-child)
+        margin-right: 16px
+    
+.video
+    position: relative
+    border-radius: 16px
+    overflow: hidden
+    +m
+        &:before
+            content: ""
+            display: block
+            padding-bottom: 122%
+    img
+        width: 100%
+        +m
+            position: absolute
+            top: 0
+            left: 0
+            height: 100%
+            object-fit: cover

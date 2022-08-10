@@ -1,0 +1,47 @@
+@import ../../../styles/helpers
+
+.top
+    margin-bottom: 32px
+    padding-bottom: 32px
+    border-bottom: 1px solid $n6
+    +dark
+        border-color: $n3
+    .info
+        margin-bottom: 20px
+
+.title
+    margin-bottom: 32px
+    text-align: center
+
+.info
+    text-align: center
+    +caption-2
+    color: $n4
+
+.btns
+    display: flex
+    justify-content: center
+    margin: 0 -10px
+    +m
+        margin: 0 -6px
+    .button
+        flex: 0 0 calc(50% - 20px)
+        margin: 0 10px
+        +m
+            flex: 0 0 calc(50% - 12px)
+            margin: 0 6px
+        &:not(:last-child)
+            margin-right: 12px
+            +m
+                margin-right: 6px
+        
+.field
+    &:not(:last-child)
+        margin-bottom: 32px
+
+.form > .button
+    width: 100%
+    margin-top: 32px
+
+.form > .info
+    margin-bottom: 32px

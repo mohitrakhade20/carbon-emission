@@ -1,0 +1,42 @@
+@import ../../../styles/helpers
+
+.preview
+    margin-bottom: 48px
+    text-align: center
+    +m
+        margin-top: 16px
+    img
+        +m
+            max-width: 300px
+
+.text
+    margin-bottom: 16px
+    text-align: center
+    font-weight: 500
+    color: $n4
+
+.email
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 48px
+    +body-bold-2
+    svg
+        margin-right: 12px
+        fill: $n2
+        +dark
+            fill: $n8
+
+.btns
+    display: flex
+    justify-content: center
+    +m
+        display: block
+
+.button
+    +m
+        width: 100%
+    &:not(:last-child)
+        margin-right: 16px
+        +m
+            margin: 0 0 12px

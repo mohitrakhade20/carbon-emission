@@ -1,0 +1,75 @@
+@import ../../styles/helpers
+
+.stage
+    font-weight: 500
+    color: $n3
+    +dark
+        color: $n6
+
+.price
+    margin-bottom: 12px
+
+.currency
+    color: $p4
+
+.info
+    max-width: 280px
+    margin-bottom: 48px
+    +caption-2
+    color: $n4
+    +m
+        margin-bottom: 32px
+
+.wrap
+    padding: 32px
+    border-radius: 16px
+    background: #F1F2F4
+    +m
+        padding: 24px
+    +dark
+        background: $n2
+
+.title
+    margin-bottom: 32px
+    +body-bold-1
+
+.row
+    display: flex
+    margin: 0 -8px
+    +m
+        display: block
+        margin: 0
+
+.col
+    position: relative
+    flex: 0 0 calc(50% - 16px)
+    width: calc(50% - 16px)
+    margin: 0 8px
+    +m
+        width: 100%
+        margin: 0
+        &:not(:last-child)
+            margin-bottom: 16px
+
+.label
+    color: $n2
+    +dark
+        color: $n8
+
+.input
+    padding-right: 82px
+    border-color: $n8
+    +dark
+        background: $n3
+    &:focus
+        border-color: $p4
+
+.category
+    position: absolute
+    right: 12px
+    bottom: 11px
+
+.button
+    margin-top: 48px
+    +m
+        margin-top: 32px

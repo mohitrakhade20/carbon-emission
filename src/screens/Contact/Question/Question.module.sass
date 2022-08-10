@@ -1,0 +1,81 @@
+@import ../../../styles/helpers
+
+.form
+    max-width: 546px
+    margin: 0 auto
+
+.fieldset
+    margin-bottom: 40px
+
+.field
+    &:not(:last-child)
+        margin-bottom: 32px
+
+.label
+    margin-bottom: 24px
+    +hairline-2
+    color: $n5
+
+.variants
+    display: flex
+    margin: 0 -10px
+
+.radio
+    position: relative
+    flex: 0 0 calc(50% - 20px)
+    width: calc(50% - 20px)
+    margin: 0 10px
+    user-select: none 
+    cursor: pointer
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
+
+.input
+    position: absolute
+    top: 0
+    left: 0
+    opacity: 0 
+    &:checked + .inner
+        box-shadow: inset 0 0 0 2px $p1
+        +dark
+            box-shadow: inset 0 0 0 2px $p1
+
+.inner
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 80px
+    padding: 12px
+    border-radius: 8px
+    background: $n8
+    transition: box-shadow .2s
+    +m
+        height: 48px
+    &:hover
+        box-shadow: inset 0 0 0 2px $n6
+    +dark
+        background: $n2
+        &:hover
+            box-shadow: inset 0 0 0 2px $n3
+
+.icon
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-shrink: 0
+    width: 44px
+    height: 44px
+    margin-right: 14px
+    border-radius: 50%
+    +m
+        display: none
+    svg
+        fill: $n8
+
+.text
+    +button-1
+    color: $n2
+    +dark
+        color: $n8
+
+.btns
+    text-align: right

@@ -1,0 +1,49 @@
+@import ../../../../../styles/helpers
+
+.head
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 16px
+
+.title
+    +body-bold-1
+
+.counter
+    +caption-bold-2
+    svg
+        margin-right: 4px
+
+.field
+    display: flex
+    align-items: center
+    padding: 0 16px
+    border-radius: 12px
+    box-shadow: inset 0 0 0 2px $n6
+    cursor: pointer
+    +dark
+        box-shadow: inset 0 0 0 2px $n2
+    &:not(:last-child)
+        margin-bottom: 12px
+
+.input
+    flex-grow: 1
+    height: 48px
+    padding: 0 10px
+    background: none
+    text-align: right
+    +poppins
+    font-size: 14px
+    font-weight: 500
+    color: $n2
+    +dark
+        color: $n8
+
+.label,
+.currency
+    font-weight: 500
+    color: $n4
+    pointer-events: none
+
+.button
+    width: 100%

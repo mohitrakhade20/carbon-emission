@@ -1,0 +1,90 @@
+@import ../../styles/helpers
+
+.head
+    display: flex
+    +m
+        display: block
+
+.details
+    margin-right: auto
+
+.user
+    +body-bold-1
+
+.email
+    font-weight: 500
+    color: $n4
+
+.level
+    display: inline-block
+    margin-top: 20px
+    padding: 8px 16px
+    border-radius: 16px
+    box-shadow: inset 0 0 0 2px $n6
+    +button-2
+    color: $p4
+    +m
+        margin-top: 12px
+    +dark
+        box-shadow: inset 0 0 0 2px $n3
+
+.dropdown
+    flex-shrink: 0
+    width: 200px
+    margin: 12px 0 0 36px
+    +m
+        width: 100%
+        margin: 40px 0 0
+
+.dropdownHead
+    background: $n7
+    box-shadow: inset 0 0 0 2px $n7
+    border-radius: 24px
+    +dark
+        background: $n2
+        box-shadow: inset 0 0 0 2px $n2
+
+.settings
+    &:not(:first-child)
+        margin-top: 48px
+        +m
+            margin-top: 24px
+
+.title
+    margin-bottom: 40px
+    +body-bold-1
+
+.box
+    &:not(:last-child)
+        margin-bottom: 40px
+
+.subtitle
+    margin-bottom: 24px
+    padding-bottom: 24px
+    border-bottom: 1px solid $n6
+    +hairline-2
+    color: $n5
+    +dark
+        border-color: $n3
+
+.item
+    display: flex
+    align-items: center
+    font-weight: 500
+    &:not(:last-child)
+        margin-bottom: 24px
+
+.category
+    margin-right: auto
+
+.content
+    margin-left: 16px
+    text-align: right
+    color: $n4
+
+.btns
+    margin-top: 48px
+    text-align: right
+    +m
+        margin-top: 24px
+        text-align: left

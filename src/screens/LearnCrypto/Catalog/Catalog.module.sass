@@ -1,0 +1,105 @@
+@import ../../../styles/helpers
+
+.form
+    position: relative
+    margin-bottom: 48px
+    padding-bottom: 32px
+    border-bottom: 1px solid $n6
+    +m
+        margin-bottom: 24px
+    +dark
+        border-color: $n3
+
+.input
+    width: 100%
+    height: 48px
+    padding-right: 64px
+    border-radius: 0
+    background: none
+    border: none
+    +poppins
+    +body-bold-1
+    color: $n2
+    +m
+        font-size: 16px
+        font-weight: 500
+    +placeholder
+        color: $n2
+    +dark
+        color: $n8
+        +placeholder
+            color: $n6
+
+.result
+    position: absolute
+    top: 0
+    right: 0
+    svg
+        margin: 0
+
+.sorting
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 64px
+    +m
+        display: block
+
+.dropdown
+    width: 256px
+    +m
+        width: 100%
+        &:not(:last-child)
+            margin-bottom: 16px
+
+.nav
+    display: flex
+    +t
+        display: none
+
+.link
+    display: flex
+    padding: 6px 12px
+    border-radius: 14px
+    background: none
+    +button-2
+    color: $n4
+    transition: all .2s
+    &:hover
+        color: $n3
+        +dark
+            color: $n6
+    &.active
+        background: $n3
+        color: $n8
+        +dark
+            background: $n6
+            color: $n2
+    &:not(:last-child)
+        margin-right: 12px
+        
+.list
+    display: flex
+    flex-wrap: wrap
+    margin: -32px -16px 0
+    +m
+        display: block
+        margin: 0
+
+.card
+    flex: 0 0 calc(33.333% - 32px)
+    width: calc(33.333% - 32px)
+    margin: 32px 16px 0
+    +d
+        flex: 0 0 calc(50% - 32px)
+        width: calc(50% - 32px)
+    +m
+        width: 100%
+        margin: 0
+        &:not(:last-child)
+            margin-bottom: 32px
+
+.btns
+    margin-top: 32px
+    text-align: center
+    

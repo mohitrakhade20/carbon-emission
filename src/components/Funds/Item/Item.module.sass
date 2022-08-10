@@ -1,0 +1,67 @@
+@import ../../../styles/helpers
+
+.item
+    transition: background .2s
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    &:hover,
+    &.active
+        background: #F8F8F9
+        +dark
+            background: $n2
+    &.active
+        .btns
+            display: flex
+    &:not(:last-child)
+        border-bottom: 1px solid $n6
+        +dark
+            border-color: $n2
+            +t
+                border-color: $n3
+
+.row
+    display: flex
+    cursor: pointer
+    padding: 16px 0 20px
+
+.col
+    flex: 1
+    padding: 0 16px
+    &:first-child
+        padding-left: 32px
+        +m
+            padding-left: 16px
+    &:last-child
+        padding-right: 32px
+        +m
+            padding-right: 16px
+    &:not(:first-child)
+        text-align: right
+    &:not(:first-child):not(:nth-child(2))
+        +m
+            display: none
+
+.currency
+    display: flex
+    .text
+        font-weight: 400
+
+.icon
+    flex-shrink: 0
+    width: 32px
+    margin-right: 20px
+    img
+        width: 100%
+
+.info
+    font-weight: 500
+
+.text
+    font-weight: 500
+    color: $n4
+
+.btns
+    display: none
+    margin-top: -10px 
+    padding: 0 32px 20px
+    +m
+        padding: 0 16px 20px

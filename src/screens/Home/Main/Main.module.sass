@@ -1,0 +1,60 @@
+@import ../../../styles/helpers
+
+.main
+    position: relative
+    padding-top: 160px
+    overflow: hidden
+    +d
+        padding-top: 80px
+    +m
+        padding-top: 32px
+
+.wrap
+    position: relative
+    z-index: 3
+    max-width: 545px
+    margin-bottom: 143px
+    +d
+        max-width: 420px
+        margin-bottom: 80px
+    +m
+        margin-bottom: 16px
+
+.title
+    margin-bottom: 20px
+
+.text
+    margin-bottom: 32px
+    +body-2
+    color: $n4
+    +t
+        max-width: 300px
+
+.button
+    margin-bottom: 80px
+    +d
+        margin-bottom: 0
+
+.scroll
+    +d
+        display: none !important
+    
+.bg
+    position: absolute
+    top: -145px
+    right: calc(50% - 750px)
+    width: 913px
+    pointer-events: none
+    +d
+        top: -80px
+        right: calc(50% - 550px)
+        width: 600px
+    +t
+        right: calc(50% - 500px)
+    +m
+        position: static
+        width: auto
+        +s
+            margin: 0 -64px
+    img
+        width: 100%

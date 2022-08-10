@@ -1,0 +1,32 @@
+@import ../../../../styles/helpers
+
+.head
+    display: flex
+    align-items: center
+    margin-bottom: 16px
+
+.title
+    margin-right: auto
+    +body-bold-2
+    color: $n4
+
+.close
+    svg
+        fill: $n4
+
+.row
+    display: flex
+    margin: 0 -16px
+    +m
+        display: block
+        margin: 0
+
+.col
+    flex: 0 0 calc(50% - 32px)
+    width: calc(50% - 32px)
+    margin: 0 16px
+    +m
+        width: 100%
+        margin: 0
+        &:not(:last-child)
+            margin-bottom: 24px
