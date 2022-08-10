@@ -4,32 +4,34 @@ import styles from "./Steps.module.sass";
 
 const items = [
   {
-    title: "Download",
+    title: "Calculate",
     image2x: "/images/content/step-1@2x.png",
     image: "/images/content/step-1.png",
     content:
-      "Stacks is a production-ready library of stackable content blocks built in React Native.",
+      "Our platform provides you with various calculators to help you understand the impact of your actions.",
   },
+ 
   {
-    title: "Connect wallet",
+    title: "Reduce",
     image2x: "/images/content/step-2@2x.png",
     image: "/images/content/step-2.png",
     content:
-      "Stacks is a production-ready library of stackable content blocks built in React Native.",
+      "Reducing emissions is the key solution to tackling climate change. Helping You To Reduce Your Carbon Footprint",
   },
   {
-    title: "Start trading",
+    title: "Offset",
     image2x: "/images/content/step-3@2x.png",
     image: "/images/content/step-3.png",
     content:
-      "Stacks is a production-ready library of stackable content blocks built in React Native.",
+      "Tackle Climate Change And Care For Developing Communities And Biodiversity By Becoming Carbon Neutral.Carbon offsetting funds solutions to reducing carbon emissions now.",
   },
+  
   {
-    title: "Earn money",
+    title: "Comply",
     image2x: "/images/content/step-4@2x.png",
     image: "/images/content/step-4.png",
     content:
-      "Stacks is a production-ready library of stackable content blocks built in React Native.",
+      "Helping Businesses Remain Compliant, Ensuring They Meet Their Carbon, Energy, Legal And Supply Chain Obligations, Whilst Helping To Drive Down Costs",
   },
 ];
 
@@ -40,8 +42,7 @@ const Steps = ({ scrollToRef }) => {
         <div className={styles.head}>
           <h2 className={cn("h2", styles.title)}>How it works</h2>
           <div className={styles.info}>
-            Stacks is a production-ready library of stackable content blocks
-            built in React Native.
+            Your Solution For Cutting Carbon And Caring For The Climate
           </div>
         </div>
         <div className={styles.list}>

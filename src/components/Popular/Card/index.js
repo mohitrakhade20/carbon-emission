@@ -9,14 +9,15 @@ const Card = ({ className, item }) => {
       <div className={styles.preview}>
         <img srcSet={`${item.image2x} 2x`} src={item.image} alt="Card" />
       </div>
-      <div className={styles.title}>{item.title}</div>
-      <div className={styles.content}>{item.content}</div>
       <Link
-        className={cn("button-stroke button-small", styles.button)}
+        className={cn("button-stroke button-small", styles.title)}
         to={item.url}
       >
         {item.button}
       </Link>
+      {/* <div className={styles.title}>{item.title}</div> */}
+      <div className={styles.content}>{item.content}</div>
+     
     </div>
   );
 };

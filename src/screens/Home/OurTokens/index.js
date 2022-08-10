@@ -3,33 +3,33 @@ import cn from "classnames";
 import styles from "./Popular.module.sass";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
-import Icon from "../Icon";
+import Icon from "../../../components/Icon";
 import Card from "./Card";
 
 const items = [
   {
-    title: "Corporation",
+    title: "Live & Unretired",
     content:
-      "Buy carbon credits with added liquidity & price transparency",
-    button: "Corporation",
+      "Each carbon credit retains its real world value",
+    button: "Live & Unretired",
     image: "/images/content/card-pic-1.png",
     image2x: "/images/content/card-pic-1@2x.png",
     url: "/buy-crypto",
   },
   {
-    title: "Individuals",
+    title: "Certified",
     content:
-      "Gain access to the voluntary carbon market",
-      button: "Individuals",
+      "Certified by the leading carbon credit issuers",
+    button: "Certified",
     image: "/images/content/card-pic-2.png",
     image2x: "/images/content/card-pic-2@2x.png",
     url: "/exchange",
   },
   {
-    title: "Developers",
+    title: "Nature-Based",
     content:
-      "Tokenize your credit issuances for immediate revenue",
-    button: "Developers",
+      "From projects that protect or restore nature",
+    button: "Nature-Based",
     image: "/images/content/card-pic-3.png",
     image2x: "/images/content/card-pic-3@2x.png",
     url: "/learn-crypto",
@@ -40,7 +40,7 @@ const SlickArrow = ({ currentSlide, slideCount, children, ...props }) => (
   <button {...props}>{children}</button>
 );
 
-const Popular = ({ classSection }) => {
+const OurTokens = ({ classSection }) => {
   const settings = {
     infinite: true,
     speed: 500,
@@ -87,12 +87,13 @@ const Popular = ({ classSection }) => {
     <div className={cn(classSection, styles.section)}>
       <div className={cn("container", styles.container)}>
         <div className={styles.head}>
-          <h2 className={cn("h2", styles.title)}>
-            Carbon x Crypto
-          </h2>
+          
           <div className={styles.info}>
-            Carbon Credit operates at the intersection of the voluntary carbon market and Web3, bringing carbon offset credits on chain
+            Each Carbon Credit token is backed by 1 carbon credit from a carbon removal or reduction project
           </div>
+          <h2 className={cn("h2", styles.title)}>
+            All underlying carbon credits  are:
+          </h2>
         </div>
         <div className={styles.wrapper}>
           <Slider className="popular-slider" {...settings}>
@@ -111,4 +112,4 @@ const Popular = ({ classSection }) => {
   );
 };
 
-export default Popular;
+export default OurTokens;

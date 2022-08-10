@@ -9,18 +9,15 @@ const Card = ({ className, item }) => {
       <div className={styles.preview}>
         <img srcSet={`${item.image2x} 2x`} src={item.image} alt="Card" />
       </div>
-      <div className={styles.wrap}>
-        <div className={cn("stage-small", styles.stage)}>{item.stage}</div>
-
-        <div className={styles.title}>{item.title}</div>
-        <div className={styles.content}>{item.content}</div>
-        <Link
-          className={cn("button-stroke button-small", styles.button)}
-          to={item.url}
-        >
-          Contact US
-        </Link>
-      </div>
+      <div className={styles.title}>{item.title}</div>
+      <div className={styles.content}>{item.content}</div>
+      {/* <Link
+        className={cn("button-stroke button-small", styles.title)}
+        to={item.url}
+      >
+        {item.button}
+      </Link> */}
+     
     </div>
   );
 };

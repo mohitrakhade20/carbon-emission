@@ -8,32 +8,32 @@ import Card from "./Card";
 
 const items = [
   {
-    title: "Be Part of our Global Community",
+    title: "Join our carbon community",
     content:
-      "Let’s stay in touch. Join our communities to keep up with the BitCloud team and our traders from across the world.",
-    stage: "crypto news",
+      "Learn more about Carbon Credit and stay up to date on all things carbon x crypto",
+      stage: "Carbon Credit",
     image: "/images/content/news-pic-1.png",
     image2x: "/images/content/news-pic-1@2x.png",
     url: "/learn-crypto-details",
   },
-  {
-    title: "Be Part of our Global Community",
-    content:
-      "Let’s stay in touch. Join our communities to keep up with the BitCloud team and our traders from across the world.",
-    stage: "Join now",
-    image: "/images/content/news-pic-1.png",
-    image2x: "/images/content/news-pic-1@2x.png",
-    url: "/learn-crypto-details",
-  },
-  {
-    title: "Be Part of our Global Community",
-    content:
-      "Let’s stay in touch. Join our communities to keep up with the BitCloud team and our traders from across the world.",
-    stage: "crypto news",
-    image: "/images/content/news-pic-1.png",
-    image2x: "/images/content/news-pic-1@2x.png",
-    url: "/learn-crypto-details",
-  },
+  // {
+  //   title: "Be Part of our Global Community",
+  //   content:
+  //     "Let’s stay in touch. Join our communities to keep up with the BitCloud team and our traders from across the world.",
+  //   stage: "Join now",
+  //   image: "/images/content/news-pic-1.png",
+  //   image2x: "/images/content/news-pic-1@2x.png",
+  //   url: "/learn-crypto-details",
+  // },
+  // {
+  //   title: "Be Part of our Global Community",
+  //   content:
+  //     "Let’s stay in touch. Join our communities to keep up with the BitCloud team and our traders from across the world.",
+  //   stage: "crypto news",
+  //   image: "/images/content/news-pic-1.png",
+  //   image2x: "/images/content/news-pic-1@2x.png",
+  //   url: "/learn-crypto-details",
+  // },
 ];
 
 const SlickArrow = ({ currentSlide, slideCount, children, ...props }) => (
@@ -64,19 +64,19 @@ const News = ({ classSection }) => {
       <div className={cn("container", styles.container)}>
         <div className={styles.head}>
           <div className={styles.logo}>
-            <Image
+            {/* <Image
               className={styles.pic}
               src="/images/logo-light.svg"
               srcDark="/images/logo-dark.svg"
               alt="BitCloud"
-            />
+            /> */}
           </div>
-          <h2 className={cn("h2", styles.title)}>
+          {/* <h2 className={cn("h2", styles.title)}>
             Stay in the know on crypto with BitCloud
           </h2>
           <div className={styles.info}>
             A creative agency that lead and inspire
-          </div>
+          </div> */}
         </div>
         <div className={styles.wrapper}>
           <Slider className="news-slider" {...settings}>

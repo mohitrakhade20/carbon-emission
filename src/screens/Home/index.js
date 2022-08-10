@@ -6,6 +6,7 @@ import Popular from "../../components/Popular";
 import Download from "./Download";
 import News from "../../components/News";
 import Steps from "./Steps";
+import OurTokens from "./OurTokens";
 
 const Home = () => {
   const scrollToRef = useRef(null);
@@ -13,12 +14,13 @@ const Home = () => {
   return (
     <>
       <Main scrollToRef={scrollToRef} />
-      <Learn scrollToRef={scrollToRef} />
+      {/* <Learn scrollToRef={scrollToRef} /> */}
       <Trend />
+      <OurTokens classSection="section-bg section-mb0" />
+      <Steps />
       <Popular classSection="section-bg section-mb0" />
       <Download />
       <News classSection="section-bg" />
-      <Steps />
     </>
   );
 };

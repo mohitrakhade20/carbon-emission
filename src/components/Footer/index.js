@@ -8,23 +8,23 @@ import Image from "../Image";
 
 const menu = [
   {
-    title: "Exchange",
+    title: "Home",
     url: "/exchange",
   },
   {
-    title: "Buy crypto",
+    title: "Token & Crypto",
     url: "/buy-crypto",
   },
   {
-    title: "Market",
+    title: "About",
     url: "/market",
   },
   {
-    title: "Learn crypto",
+    title: "Partnerships",
     url: "/learn-crypto",
   },
   {
-    title: "Contact",
+    title: "Privacy Policy",
     url: "/contact",
   },
 ];
@@ -32,28 +32,28 @@ const menu = [
 const socials = [
   {
     title: "facebook",
-    size: "16",
-    url: "https://www.facebook.com/ui8.net/",
+    size: "22",
+    url: "https://www.facebook.com/aaoblocktech/",
   },
   {
     title: "twitter",
-    size: "18",
-    url: "https://twitter.com/ui8",
+    size: "22",
+    url: "https://twitter.com/aaoblocktech",
   },
   {
     title: "instagram",
-    size: "16",
-    url: "https://www.instagram.com/ui8net/",
+    size: "22",
+    url: "https://www.instagram.com/aaoblocktech/",
   },
   {
     title: "dribbble",
-    size: "16",
-    url: "https://dribbble.com/ui8",
+    size: "22",
+    url: "https://dribbble.com/aaoblocktech",
   },
   {
     title: "behance",
-    size: "20",
-    url: "https://www.behance.net/ui8",
+    size: "22",
+    url: "https://www.behance.net/aaoblocktech",
   },
 ];
 
@@ -73,14 +73,15 @@ const Footer = () => {
             <Link className={styles.logo} to="/">
               <img
                 className={styles.picDesktop}
-                src="images/logo.svg"
-                alt="BitCloud"
+                src="images/logo-light.png"
+                alt="Carbon Credit"
+                
               />
               <Image
                 className={styles.picMobile}
-                src="/images/logo-light.svg"
-                srcDark="/images/logo-dark.svg"
-                alt="BitCloud"
+                src="/images/logo-light.png"
+                srcDark="/images/logo-light.png"
+                alt="Carbon Credit"
               />
             </Link>
             <div className={cn(styles.item, { [styles.active]: visible })}>
@@ -108,10 +109,10 @@ const Footer = () => {
           <div className={styles.col}>
             <div className={styles.category}>contact</div>
             <div className={styles.info}>
-              <p>43252 Borer Mountains</p>
-              <p>Zackerychester</p>
-              <p>Bahamas</p>
-              <p>732-528-4945</p>
+              <p>AAO Blocktech</p>
+              <p>Bangalore</p>
+              <p>India</p>
+              <p>info@aaoblocktech.com</p>
             </div>
           </div>
           <div className={styles.col}>
@@ -136,7 +137,7 @@ const Footer = () => {
       <div className={styles.foot}>
         <div className={cn("container", styles.container)}>
           <div className={styles.copyright}>
-            Copyright © 2021 UI8 LLC. All rights reserved
+            Copyright © 2021 AAO Blocktech All rights reserved
           </div>
           <div className={styles.socials}>
             {socials.map((x, index) => (

@@ -36,9 +36,9 @@ const Download = () => {
           />
         </div>
         <div className={styles.wrap}>
-          <h2 className={cn("h2", styles.title)}>Trade anywhere</h2>
+          <h2 className={cn("h2", styles.title)}>Coming Soon</h2>
           <div className={styles.info}>
-            Anytime, anywhere. Trade crypto on your terms.
+            Offsets you can trust
           </div>
           <div className={styles.list}>
             {items.map((x, index) => (

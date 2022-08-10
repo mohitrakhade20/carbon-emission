@@ -26,6 +26,7 @@ import SignIn from "./screens/SignIn";
 import SignUp from "./screens/SignUp";
 import ForgotPassword from "./screens/ForgotPassword";
 import PageList from "./screens/PageList";
+import OurTokens from "./screens/Home/OurTokens";
 
 function App() {
   return (
@@ -37,6 +38,15 @@ function App() {
           render={() => (
             <Page>
               <Home />
+            </Page>
+          )}
+        />
+        <Route
+          exact
+          path="/our-tokens"
+          render={() => (
+            <Page>
+              <OurTokens />
             </Page>
           )}
         />
