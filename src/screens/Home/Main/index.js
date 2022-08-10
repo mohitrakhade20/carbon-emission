@@ -11,14 +11,14 @@ const Main = ({ scrollToRef }) => {
       <div className={cn("container", styles.container)}>
         <div className={styles.wrap}>
           <h1 className={cn("h1", styles.title)}>
-            Reduce & Nutralize <br></br>carbon emissions
+            Reduce & Neutralize <br></br>carbon emissions
           </h1>
           <div className={styles.text}>
-          It is surprising how many climate-​harming CO2 emissions arise when
-           flying, driving, living, working and partying
+            It is surprising how many climate-​harming CO2 emissions arise when
+            flying, driving, living, working and partying
           </div>
-          <Link className={cn("button", styles.button)} to="/sign-up">
-            Nutralize now
+          <Link className={cn("button", styles.button)} to="/deposit-fiat">
+            Neutralize now
           </Link>
           <ScrollButton
             onScroll={() =>

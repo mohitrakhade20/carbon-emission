@@ -79,11 +79,11 @@ const News = ({ classSection }) => {
           </div> */}
         </div>
         <div className={styles.wrapper}>
-          <Slider className="news-slider" {...settings}>
-            {items.map((x, index) => (
-              <Card className={styles.card} item={x} key={index} />
-            ))}
-          </Slider>
+          {/* <Slider className="news-slider" {...settings}>
+            {items.map((x, index) => ( */}
+              <Card className={styles.card} item={items[0]} key={0} />
+            {/* ))} */}
+          {/* </Slider> */}
         </div>
       </div>
     </div>

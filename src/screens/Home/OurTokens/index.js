@@ -12,8 +12,8 @@ const items = [
     content:
       "Each carbon credit retains its real world value",
     button: "Live & Unretired",
-    image: "/images/content/card-pic-1.png",
-    image2x: "/images/content/card-pic-1@2x.png",
+    image: "/images/content/livenunretired.png",
+    image2x: "/images/content/livenunretired.png",
     url: "/buy-crypto",
   },
   {
@@ -21,8 +21,8 @@ const items = [
     content:
       "Certified by the leading carbon credit issuers",
     button: "Certified",
-    image: "/images/content/card-pic-2.png",
-    image2x: "/images/content/card-pic-2@2x.png",
+    image: "/images/content/certified.png",
+    image2x: "/images/content/certified.png",
     url: "/exchange",
   },
   {
@@ -30,8 +30,8 @@ const items = [
     content:
       "From projects that protect or restore nature",
     button: "Nature-Based",
-    image: "/images/content/card-pic-3.png",
-    image2x: "/images/content/card-pic-3@2x.png",
+    image: "/images/content/forest.png",
+    image2x: "/images/content/forest.png",
     url: "/learn-crypto",
   },
 ];

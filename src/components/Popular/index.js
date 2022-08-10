@@ -12,8 +12,8 @@ const items = [
     content:
       "Buy carbon credits with added liquidity & price transparency",
     button: "Corporation",
-    image: "/images/content/card-pic-1.png",
-    image2x: "/images/content/card-pic-1@2x.png",
+    image: "/images/content/factory.jpg",
+    image2x: "/images/content/factory.jpg",
     url: "/buy-crypto",
   },
   {
@@ -21,8 +21,8 @@ const items = [
     content:
       "Gain access to the voluntary carbon market",
       button: "Individuals",
-    image: "/images/content/card-pic-2.png",
-    image2x: "/images/content/card-pic-2@2x.png",
+    image: "/images/content/individuals.png",
+    image2x: "/images/content/individuals.png",
     url: "/exchange",
   },
   {
@@ -30,8 +30,8 @@ const items = [
     content:
       "Tokenize your credit issuances for immediate revenue",
     button: "Developers",
-    image: "/images/content/card-pic-3.png",
-    image2x: "/images/content/card-pic-3@2x.png",
+    image: "/images/content/corporate.png",
+    image2x: "/images/content/corporate.png",
     url: "/learn-crypto",
   },
 ];

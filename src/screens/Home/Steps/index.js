@@ -5,33 +5,33 @@ import styles from "./Steps.module.sass";
 const items = [
   {
     title: "Calculate",
-    image2x: "/images/content/step-1@2x.png",
-    image: "/images/content/step-1.png",
+    image2x: "/images/content/calculate.png",
+    image: "/images/content/calculate.png",
     content:
       "Our platform provides you with various calculators to help you understand the impact of your actions.",
   },
  
   {
     title: "Reduce",
-    image2x: "/images/content/step-2@2x.png",
-    image: "/images/content/step-2.png",
+    image2x: "/images/content/reduce.png",
+    image: "/images/content/reduce.png",
     content:
       "Reducing emissions is the key solution to tackling climate change. Helping You To Reduce Your Carbon Footprint",
   },
   {
     title: "Offset",
-    image2x: "/images/content/step-3@2x.png",
-    image: "/images/content/step-3.png",
+    image2x: "/images/content/tulip.png",
+    image: "/images/content/tulip.png",
     content:
-      "Tackle Climate Change And Care For Developing Communities And Biodiversity By Becoming Carbon Neutral.Carbon offsetting funds solutions to reducing carbon emissions now.",
+      "Tackle Climate Change And Care For Biodiversity By Becoming Carbon Neutral. We fund solutions to reducing carbon emissions.",
   },
   
   {
     title: "Comply",
-    image2x: "/images/content/step-4@2x.png",
-    image: "/images/content/step-4.png",
+    image2x: "/images/content/comply.png",
+    image: "/images/content/comply.png",
     content:
-      "Helping Businesses Remain Compliant, Ensuring They Meet Their Carbon, Energy, Legal And Supply Chain Obligations, Whilst Helping To Drive Down Costs",
+      "Helping Businesses Meet Their Carbon, Energy, Legal And Supply Chain Obligations, Whilst Helping To Drive Down Costs",
   },
 ];
 

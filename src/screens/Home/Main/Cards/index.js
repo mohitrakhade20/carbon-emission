@@ -10,14 +10,14 @@ const items = [
     money: "36,641.20",
     negative: "-0.79%",
     image: "/images/content/currency/verra.png",
-    url: "/exchange",
+    url: "/market",
   },
   {
     title: "Gold Standard ",
     money: "36,641.20",
     positive: "+0.79%",
     image: "images/content/currency/gold.png",
-    url: "/exchange",
+    url: "/market",
   },
   {
     title: "USDT",
@@ -25,7 +25,7 @@ const items = [
     money: "36,641.20",
     positive: "+0.79%",
     image: "/images/content/currency/tether.svg",
-    url: "/exchange",
+    url: "/market",
   },
   {
     title: "BTC",
@@ -33,7 +33,7 @@ const items = [
     money: "36,641.20",
     positive: "+0.79%",
     image: "images/content/currency/bitcoin.svg",
-    url: "/exchange",
+    url: "/market",
   },
 ];
 

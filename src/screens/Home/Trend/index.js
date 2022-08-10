@@ -26,7 +26,7 @@ const items = [
     image: "/images/content/currency/verra.png",
     marketcap: "$328,564,656,654",
     volume: "$328,564,656,654",
-    url: "/exchange",
+    url: "/market",
   },
   {
     title: "Gold Stardard",
@@ -37,7 +37,7 @@ const items = [
     image: "/images/content/currency/gold.png",
     marketcap: "$328,564,656,654",
     volume: "$328,564,656,654",
-    url: "/exchange",
+    url: "/market",
   },
 
   {
@@ -49,7 +49,7 @@ const items = [
     image: "/images/content/currency/tether.svg",
     marketcap: "$328,564,656,654",
     volume: "$328,564,656,654",
-    url: "/exchange",
+    url: "/market",
   },
   {
     title: "Bitcoin",
@@ -57,7 +57,7 @@ const items = [
     price: "$36,201.34",
     positive: "+1.71%",
     image: "/images/content/currency/bitcoin.svg",
-    url: "/exchange",
+    url: "/market",
   },
   // {
   //   title: "Ethereum",
@@ -65,7 +65,7 @@ const items = [
   //   price: "$2,605.95",
   //   positive: "+2.04%",
   //   image: "/images/content/currency/ethereum.svg",
-  //   url: "/exchange",
+  //   url: "/market",
   // },
   // {
   //   title: "Bitcoin Cash",
@@ -73,7 +73,7 @@ const items = [
   //   price: "$939.20",
   //   negative: "-0.74%",
   //   image: "/images/content/currency/bitcoin-cash.svg",
-  //   url: "/exchange",
+  //   url: "/market",
   // },
   // {
   //   title: "Ripple",
@@ -81,7 +81,7 @@ const items = [
   //   price: "$1.02",
   //   positive: "+1.20%",
   //   image: "/images/content/currency/ripple.svg",
-  //   url: "/exchange",
+  //   url: "/market",
   // },
   // {
   //   title: "Chainlink",
@@ -89,7 +89,7 @@ const items = [
   //   price: "$30.56",
   //   negative: "-3.84%",
   //   image: "/images/content/currency/chainlink.svg",
-  //   url: "/exchange",
+  //   url: "/market",
   // },
 ];
 
