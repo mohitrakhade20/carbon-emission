@@ -7,11 +7,11 @@ import Dropdown from "../../../../components/Dropdown";
 
 const navigation = [
   "Cryptocurrencies",
-  "DeFi",
-  "Innovation",
-  "POS",
-  "NFT",
-  "POW",
+  // "DeFi",
+  // "Innovation",
+  // "POS",
+  // "NFT",
+  // "POW",
 ];
 
 const currency = [
@@ -20,7 +20,7 @@ const currency = [
     price: "36,641.20",
     currency: "36,641.20",
     positive: "+0.79%",
-    image: "/images/content/currency/bitcoin.svg",
+    image: "/images/content/currency/verra.png",
     url: "/exchange",
   },
   {
@@ -28,7 +28,7 @@ const currency = [
     price: "36,641.20",
     currency: "36,641.20",
     positive: "+2.96%",
-    image: "/images/content/currency/ethereum.svg",
+    image: "/images/content/currency/gold.png",
     url: "/exchange",
   },
   {
@@ -39,6 +39,31 @@ const currency = [
     image: "/images/content/currency/maid.svg",
     url: "/exchange",
   },
+
+  // {
+  //   title: "Verra Standard ",
+  //   price: "36,641.20",
+  //   money: "36,641.20",
+  //   negative: "-0.79%",
+  //   image: "/images/content/currency/verra.png",
+  //   url: "/exchange",
+  // },
+  // {
+  //   title: "Gold Standard ",
+  //   money: "36,641.20",
+  //   positive: "+0.79%",
+  //   image: "images/content/currency/gold.png",
+  //   url: "/exchange",
+  // },
+  // {
+  //   title: "USDT",
+  //   price: "36,641.20",
+  //   money: "36,641.20",
+  //   positive: "+0.79%",
+  //   image: "/images/content/currency/tether.svg",
+  //   url: "/exchange",
+  // },
+
 ];
 
 const data = [
@@ -105,8 +130,8 @@ const Panel = () => {
   const [sorting, setSorting] = useState(navigation[0]);
 
   return (
-    <div className={styles.panel}>
-      <div className={styles.body}>
+    <div className={styles.panel} >
+      <div className={styles.body} style={{marginBottom:"50px"}}>
         <div className={styles.list}>
           {currency.map((x, index) => (
             <Link className={styles.item} key={index} to={x.url}>
@@ -173,8 +198,8 @@ const Panel = () => {
           ))}
         </div>
       </div>
-      <div className={styles.foot}>
-        <div className={styles.nav}>
+      {/* <div className={styles.foot}> */}
+        {/* <div className={styles.nav}>
           {navigation.map((x, index) => (
             <button
               className={cn(styles.link, {
@@ -186,20 +211,20 @@ const Panel = () => {
               {x}
             </button>
           ))}
-        </div>
-        <Link
+        </div> */}
+        {/* <Link
           className={cn("button-stroke button-small", styles.button)}
           to="/exchange"
         >
           Trade
-        </Link>
+        </Link> */}
         <Dropdown
           className={styles.dropdown}
           value={sorting}
           setValue={setSorting}
           options={navigation}
         />
-      </div>
+      {/* </div> */}
     </div>
   );
 };

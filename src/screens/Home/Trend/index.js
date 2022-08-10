@@ -16,6 +16,41 @@ const navigation = [
 ];
 
 const items = [
+
+  {
+    title: "Verra Standard",
+    currency: "WVRA",
+    price: "$36,201.34",
+    positive: "+6.04%",
+    negativeWeek: "-1.71%",
+    image: "/images/content/currency/verra.png",
+    marketcap: "$328,564,656,654",
+    volume: "$328,564,656,654",
+    url: "/exchange",
+  },
+  {
+    title: "Gold Stardard",
+    currency: "WGLD",
+    price: "$2,605.95",
+    positive: "+6.04%",
+    positiveWeek: "+0.05%",
+    image: "/images/content/currency/gold.png",
+    marketcap: "$328,564,656,654",
+    volume: "$328,564,656,654",
+    url: "/exchange",
+  },
+
+  {
+    title: "Tether",
+    currency: "USDT",
+    price: "$1.00",
+    positive: "+6.04%",
+    negativeWeek: "-1.71%",
+    image: "/images/content/currency/tether.svg",
+    marketcap: "$328,564,656,654",
+    volume: "$328,564,656,654",
+    url: "/exchange",
+  },
   {
     title: "Bitcoin",
     currency: "BTC",
@@ -24,38 +59,38 @@ const items = [
     image: "/images/content/currency/bitcoin.svg",
     url: "/exchange",
   },
-  {
-    title: "Ethereum",
-    currency: "ETH",
-    price: "$2,605.95",
-    positive: "+2.04%",
-    image: "/images/content/currency/ethereum.svg",
-    url: "/exchange",
-  },
-  {
-    title: "Bitcoin Cash",
-    currency: "BCH",
-    price: "$939.20",
-    negative: "-0.74%",
-    image: "/images/content/currency/bitcoin-cash.svg",
-    url: "/exchange",
-  },
-  {
-    title: "Ripple",
-    currency: "XRP",
-    price: "$1.02",
-    positive: "+1.20%",
-    image: "/images/content/currency/ripple.svg",
-    url: "/exchange",
-  },
-  {
-    title: "Chainlink",
-    currency: "LINK",
-    price: "$30.56",
-    negative: "-3.84%",
-    image: "/images/content/currency/chainlink.svg",
-    url: "/exchange",
-  },
+  // {
+  //   title: "Ethereum",
+  //   currency: "ETH",
+  //   price: "$2,605.95",
+  //   positive: "+2.04%",
+  //   image: "/images/content/currency/ethereum.svg",
+  //   url: "/exchange",
+  // },
+  // {
+  //   title: "Bitcoin Cash",
+  //   currency: "BCH",
+  //   price: "$939.20",
+  //   negative: "-0.74%",
+  //   image: "/images/content/currency/bitcoin-cash.svg",
+  //   url: "/exchange",
+  // },
+  // {
+  //   title: "Ripple",
+  //   currency: "XRP",
+  //   price: "$1.02",
+  //   positive: "+1.20%",
+  //   image: "/images/content/currency/ripple.svg",
+  //   url: "/exchange",
+  // },
+  // {
+  //   title: "Chainlink",
+  //   currency: "LINK",
+  //   price: "$30.56",
+  //   negative: "-3.84%",
+  //   image: "/images/content/currency/chainlink.svg",
+  //   url: "/exchange",
+  // },
 ];
 
 const data = [
@@ -130,7 +165,7 @@ const Learn = () => {
             View more
           </Link>
         </div>
-        <div className={styles.nav}>
+        {/* <div className={styles.nav}>
           {navigation.map((x, index) => (
             <button
               className={cn(styles.link, {
@@ -142,7 +177,7 @@ const Learn = () => {
               {x}
             </button>
           ))}
-        </div>
+        </div> */}
         <div className={styles.dropdown}>
           <Dropdown
             className={styles.dropdown}

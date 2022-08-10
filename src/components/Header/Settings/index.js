@@ -19,7 +19,7 @@ const language = [
   },
 ];
 
-const currency = ["USD", "RUB", "EUR", "JPY", "BTC"];
+const currency = ["USDT", "USD", "INR"];
 
 const Settings = ({ className }) => {
   const [visible, setVisible] = useState(false);
@@ -32,12 +32,12 @@ const Settings = ({ className }) => {
         })}
       >
         <button className={styles.head} onClick={() => setVisible(!visible)}>
-          EN/USD
+          USD
           <Icon name="arrow-down" size="16" />
         </button>
         <div className={styles.body}>
-          <div className={styles.row}>
-            <div className={styles.col}>
+          {/* <div className={styles.row}> */}
+            {/* <div className={styles.col}>
               <div className={styles.category}>Language</div>
               <div className={styles.menu}>
                 {language.map((x, index) => (
@@ -52,8 +52,8 @@ const Settings = ({ className }) => {
                   </div>
                 ))}
               </div>
-            </div>
-            <div className={styles.col}>
+            </div> */}
+            <div >
               <div className={styles.category}>Currency</div>
               <div className={styles.menu}>
                 {currency.map((x, index) => (
@@ -70,7 +70,7 @@ const Settings = ({ className }) => {
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </OutsideClickHandler>
   );
 };

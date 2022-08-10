@@ -6,9 +6,9 @@ import Loader from "../Loader";
 
 const items = [
   {
-    title: "Learn about UI8 coin and earn an All-Access Pass",
-    author: "Floyd Buckridge",
-    date: "Feb 03, 2021",
+    title: "What are Cryptocurrency Trading Bots",
+    author: "AAO Blocktech",
+    date: "Feb 01, 2021",
     category: "purple",
     categoryText: "learn & earn",
     image: "/images/content/lessons-pic-1.jpg",
@@ -17,8 +17,8 @@ const items = [
     url: "/learn-crypto",
   },
   {
-    title: "Submit your watchlist and win USDT",
-    author: "Floyd Buckridge",
+    title: "Advantages of Blockchain in Big Data Transformation",
+    author: "AAO Blocktech",
     date: "Feb 03, 2021",
     category: "green",
     categoryText: "weekly watchlist airdrop",
@@ -28,9 +28,9 @@ const items = [
     url: "/learn-crypto",
   },
   {
-    title: "Submit your watchlist and win USDT",
-    author: "Floyd Buckridge",
-    date: "Feb 03, 2021",
+    title: "Blockchain in Education Sector: Advantages and Disadvantages    ",
+    author: "AAO Blocktech",
+    date: "Feb 13, 2021",
     category: "blue",
     categoryText: "featured",
     image: "/images/content/lessons-pic-3.jpg",
@@ -38,17 +38,17 @@ const items = [
     play: true,
     url: "/learn-crypto",
   },
-  {
-    title: "Learn about UI8 coin and earn an All-Access Pass",
-    author: "Floyd Buckridge",
-    date: "Feb 03, 2021",
-    category: "purple",
-    categoryText: "learn & earn",
-    image: "/images/content/lessons-pic-1.jpg",
-    image2x: "/images/content/lessons-pic-1@2x.jpg",
-    play: true,
-    url: "/learn-crypto",
-  },
+  // {
+  //   title: "Learn about UI8 coin and earn an All-Access Pass",
+  //   author: "Floyd Buckridge",
+  //   date: "Feb 03, 2021",
+  //   category: "purple",
+  //   categoryText: "learn & earn",
+  //   image: "/images/content/lessons-pic-1.jpg",
+  //   image2x: "/images/content/lessons-pic-1@2x.jpg",
+  //   play: true,
+  //   url: "/learn-crypto",
+  // },
 ];
 
 const Lessons = ({ classSection }) => {

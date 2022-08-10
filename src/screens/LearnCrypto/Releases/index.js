@@ -8,21 +8,20 @@ const navigationList = ["Bitcoin", "Blockchain", "Tutorials"];
 
 const items = [
   {
-    title: "A Beginner's Guide to TradingView",
-    currency: "Ethereum",
+    title: "What are Cryptocurrency Trading Bots",
+    currency: "AAO Blocktech",
     content:
-      "A fully-featured landing page kit, including design files, and beautiful 3D illustrations editable.",
-    category: "red",
+"Security, However one of blockchain's particular characteristics is security, this doesn't surmise that it is immune. Since the information ",    category: "red",
     categoryText: "new",
     image: "/images/content/releases-pic-1.jpg",
     image2x: "/images/content/releases-pic-1@2x.jpg",
     url: "/learn-crypto-details",
   },
   {
-    title: "What Is Crypto Market Sentiment?",
-    currency: "Ethereum",
+    title: "Advantages of Blockchain in Big Data Transformation",
+    currency: "AAO Blocktech",
     content:
-      "A fully-featured landing page kit, including design files, and beautiful 3D illustrations editable.",
+"Blockchain can be utilized in an assortment of ventures, including medical services, land documentation, and instruction, on account of its decentralized and secure nature. ",
     category: "green",
     categoryText: "beginner",
     image: "/images/content/releases-pic-2.jpg",
@@ -30,11 +29,10 @@ const items = [
     url: "/learn-crypto-details",
   },
   {
-    title: "What Is the Ethereum Hard Fork?",
-    currency: "Ethereum",
+    title: "Blockchain in Education Sector: Advantages and Disadvantages    ",
+    currency: "AAO Blocktech",
     content:
-      "A fully-featured landing page kit, including design files, and beautiful 3D illustrations editable.",
-    category: "red",
+"Is there a spot for blockchain in different ventures, like schooling? certainly, its apt. The advantage of using blockchain in instruction is the information ",    category: "red",
     categoryText: "new",
     image: "/images/content/releases-pic-3.jpg",
     image2x: "/images/content/releases-pic-3@2x.jpg",
@@ -57,8 +55,9 @@ const Releases = ({ scrollToRef }) => {
           <div className={styles.wrap}>
             <h2 className={cn("h2", styles.title)}>Latest Releases</h2>
             <div className={styles.info}>
-              Stacks is a production-ready library of stackable content blocks
-              built in React Native.
+            We develop impeccable, decentralized Blockchain solutions.
+We bring the power team.
+You bring the challenge.
             </div>
             <div className={styles.nav}>
               {navigationList.map((x, index) => (

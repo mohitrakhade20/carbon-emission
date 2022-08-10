@@ -8,7 +8,7 @@ const Main = () => {
       <div className={cn("container", styles.container)}>
         <div className={styles.wrap}>
           <h1 className={cn("h1", styles.title)}>
-            Today’s Cryptocurrency prices
+            Carbon Credits on Blockchain
           </h1>
           <div className={styles.text}>
             The global crypto market cap is <strong>$1.86T</strong>

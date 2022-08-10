@@ -5,42 +5,41 @@ import styles from "./Cards.module.sass";
 
 const items = [
   {
-    title: "BTC/USDT",
+    title: "Verra Standard ",
     price: "36,641.20",
     money: "36,641.20",
     negative: "-0.79%",
+    image: "/images/content/currency/verra.png",
+    url: "/exchange",
+  },
+  {
+    title: "Gold Standard ",
+    money: "36,641.20",
+    positive: "+0.79%",
+    image: "images/content/currency/gold.png",
+    url: "/exchange",
+  },
+  {
+    title: "USDT",
+    price: "36,641.20",
+    money: "36,641.20",
+    positive: "+0.79%",
+    image: "/images/content/currency/tether.svg",
+    url: "/exchange",
+  },
+  {
+    title: "BTC",
+    price: "36,641.20",
+    money: "36,641.20",
+    positive: "+0.79%",
     image: "images/content/currency/bitcoin.svg",
-    url: "/exchange",
-  },
-  {
-    title: "BTC/USDT",
-    price: "36,641.20",
-    money: "36,641.20",
-    positive: "+0.79%",
-    image: "images/content/currency/chainlink.svg",
-    url: "/exchange",
-  },
-  {
-    title: "BTC/USDT",
-    price: "36,641.20",
-    money: "36,641.20",
-    positive: "+0.79%",
-    image: "images/content/currency/monero.svg",
-    url: "/exchange",
-  },
-  {
-    title: "BTC/USDT",
-    price: "36,641.20",
-    money: "36,641.20",
-    positive: "+0.79%",
-    image: "images/content/currency/maid.svg",
     url: "/exchange",
   },
 ];
 
 const Cards = ({ className }) => {
   return (
-    <div className={cn(className, styles.cards)}>
+    <div className={cn(className, styles.cards)} style={{ marginBottom:"50px"}} >
       {items.map((x, index) => (
         <Link className={styles.card} key={index} to={x.url}>
           <div className={styles.icon}>

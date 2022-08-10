@@ -12,7 +12,7 @@ const Theme = ({ className, icon, small }) => {
       <input
         className={styles.input}
         checked={darkMode.value}
-        onChange={darkMode.toggle}
+        // onChange={darkMode.toggle}
         type="checkbox"
       />
       {icon ? (
