@@ -3,7 +3,7 @@ import cn from "classnames";
 import styles from "./Table.module.sass";
 import Dropdown from "../../../components/Dropdown";
 
-const navigation = ["Market trades", "My trades", "Open orders", "Favorites"];
+const navigation = ["Market trades", "My trades", "Open orders"];
 
 const items = [
   {
@@ -102,7 +102,7 @@ const Table = () => {
             <div className="sorting">Price (USDT)</div>
           </div>
           <div className={styles.col}>
-            <div className="sorting">Amount (BTC)</div>
+            <div className="sorting">Amount (WVRA)</div>
           </div>
           <div className={styles.col}>
             <div className="sorting">Total (USDT)</div>

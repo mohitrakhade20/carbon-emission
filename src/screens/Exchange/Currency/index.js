@@ -84,7 +84,7 @@ const Currency = () => {
 
   return (
     <div className={styles.currency}>
-      <div className={styles.nav}>
+      {/* <div className={styles.nav}>
         {navigation.map((x, index) => (
           <button
             className={cn(styles.link, {
@@ -96,8 +96,8 @@ const Currency = () => {
             {x}
           </button>
         ))}
-      </div>
-      <form className={styles.form} action="" onSubmit={() => handleSubmit()}>
+      </div> */}
+      {/* <form className={styles.form} action="" onSubmit={() => handleSubmit()}>
         <input
           className={styles.input}
           type="text"
@@ -147,7 +147,7 @@ const Currency = () => {
             <div className={styles.col}>{x.volume}</div>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -29,16 +29,16 @@ const navigation = [
     title: "Transfer",
     icon: "arrow-next",
   },
-  {
-    title: "Buy with Carbon",
-    icon: "wallet",
-    url: "/buy-crypto",
-  },
-  {
-    title: "Claim Crypto",
-    icon: "sell",
-    url: "/sell-crypto",
-  },
+  // {
+  //   title: "Buy with Carbon",
+  //   icon: "wallet",
+  //   url: "/buy-crypto",
+  // },
+  // {
+  //   title: "Claim Crypto",
+  //   icon: "sell",
+  //   url: "/sell-crypto",
+  // },
 ];
 
 const Wallet = ({ className, children }) => {
@@ -102,7 +102,7 @@ const Wallet = ({ className, children }) => {
           <div className={styles.btns}>
             <Link
               className={cn("button button-small", styles.button)}
-              to="/deposit-fiat"
+              to="/wallet-overview"
             >
               Deposit
             </Link>

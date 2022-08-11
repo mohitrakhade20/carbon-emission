@@ -11,8 +11,8 @@ const LearnCrypto = () => {
   return (
     <>
       <Catalog scrollToRefCatalog={scrollToRefCatalog} />
-      <Main scrollToRef={scrollToRef} scrollToRefCatalog={scrollToRefCatalog} />
-      <Releases scrollToRef={scrollToRef} />
+      {/* <Main scrollToRef={scrollToRef} scrollToRefCatalog={scrollToRefCatalog} /> */}
+      {/* <Releases scrollToRef={scrollToRef} /> */}
       <News classSection="section-bg section-mb0" />
     </>
   );

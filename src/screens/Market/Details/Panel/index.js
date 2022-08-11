@@ -16,7 +16,7 @@ const navigation = [
 
 const currency = [
   {
-    title: "BTC/USDT",
+    title: "WVRA",
     price: "36,641.20",
     currency: "36,641.20",
     positive: "+0.79%",
@@ -24,7 +24,7 @@ const currency = [
     url: "/exchange",
   },
   {
-    title: "ETH/USDT",
+    title: "WGLD",
     price: "36,641.20",
     currency: "36,641.20",
     positive: "+2.96%",
@@ -32,11 +32,11 @@ const currency = [
     url: "/exchange",
   },
   {
-    title: "ATC/USDT",
+    title: "USDT",
     price: "41.20",
     currency: "41.20",
     positive: "+0.79%",
-    image: "/images/content/currency/maid.svg",
+    image: "/images/content/currency/tether.svg",
     url: "/exchange",
   },
 

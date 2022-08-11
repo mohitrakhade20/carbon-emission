@@ -11,13 +11,13 @@ const Main = ({ scrollToRef }) => {
       <div className={cn("container", styles.container)}>
         <div className={styles.wrap}>
           <h1 className={cn("h1", styles.title)}>
-            Reduce & Neutralize <br></br>carbon emissions
-          </h1>
+          Global Spot Trading Platform for Voluntary Carbon Credits          </h1>
           <div className={styles.text}>
-            It is surprising how many climate-​harming CO2 emissions arise when
-            flying, driving, living, working and partying
+          Carbon Credit Platfrom is the world’s first digital carbon offsetting exchange for spot price, voluntary carbon credit trading.
+
+
           </div>
-          <Link className={cn("button", styles.button)} to="/deposit-fiat">
+          <Link className={cn("button", styles.button)} to="/exchange">
             Neutralize now
           </Link>
           <ScrollButton

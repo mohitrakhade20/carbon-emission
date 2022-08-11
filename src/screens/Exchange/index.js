@@ -49,8 +49,8 @@ const Exchange = () => {
           )}
           {activeIndex === 2 && (
             <div className={styles.box}>
-              <Currency />
-              <Trades />
+              {/* <Currency /> */}
+              {/* <Trades /> */}
             </div>
           )}
         </>
@@ -65,8 +65,8 @@ const Exchange = () => {
             <Table />
           </div>
           <div className={styles.col}>
-            <Currency />
-            <Trades />
+            {/* <Currency /> */}
+            {/* <Trades /> */}
           </div>
         </div>
       )}

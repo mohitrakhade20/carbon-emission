@@ -1,0 +1,67 @@
+@import ../../../styles/helpers
+
+.title
+    margin-bottom: 24px
+    +body-bold-1
+
+.text,
+.info
+    margin-bottom: 12px
+
+.text
+    color: $n4
+
+.info
+    +body-bold-2
+
+.list
+    margin-bottom: 32px
+
+.line
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    &:not(:last-child)
+        margin-bottom: 12px
+        padding-bottom: 12px
+        border-bottom: 1px solid $n6
+        +dark
+            border-color: $n3
+
+.subtitle
+    margin-right: auto
+    padding-right: 20px
+    color: $n4
+
+.details
+    display: flex
+    align-items: center
+
+.content
+    margin-right: 12px
+    font-weight: 500
+
+.copy
+    svg
+        fill: $n4
+        transition: fill .2s
+    &:hover
+        svg
+            fill: $n2
+            +dark
+                fill: $n8
+
+.code
+    padding: 12px
+    background: $n6
+    border-radius: 4px
+    text-align: center
+    +body-bold-2
+    +dark
+        background: $n3
+
+.btns
+    margin-top: 24px
+    text-align: center
+    .button
+        min-width: 184px

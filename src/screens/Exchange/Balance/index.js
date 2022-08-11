@@ -334,7 +334,7 @@ const Balance = () => {
       </div>
       <div className={styles.top}>
         <div className={styles.price}>Price (USDT)</div>
-        <div className={styles.amount}>Amounts (BTC)</div>
+        <div className={styles.amount}>Amounts (WVRA)</div>
         <div className={styles.total}>Total</div>
       </div>
       <div className={styles.list}>

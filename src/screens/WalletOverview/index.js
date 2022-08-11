@@ -8,7 +8,7 @@ import AccountBalances from "./AccountBalances";
 import AssetBalances from "./AssetBalances";
 import Integrations from "./Integrations";
 
-const optionsCurrency = ["USD", "EUR", "RUB"];
+const optionsCurrency = ["USDT", "WGLD", "WVRA"];
 
 const WalletOverview = () => {
   const [search, setSearch] = useState("");
@@ -57,8 +57,8 @@ const WalletOverview = () => {
         <div className={styles.details}>
           <div className={styles.info}>Total balance</div>
           <div className={styles.currency}>
-            <div className={styles.number}>0.27894652</div>
-            <div className={cn("category-green", styles.category)}>BTC</div>
+            <div className={styles.number}>11,652</div>
+            <div className={cn("category-green", styles.category)}>USDT</div>
           </div>
           <div className={styles.price}>$10,098.36</div>
         </div>
@@ -77,7 +77,7 @@ const WalletOverview = () => {
           </div>
         </div>
         <div className={styles.item}>
-          <div className={styles.head}>Integrations</div>
+          {/* <div className={styles.head}>Integrations</div> */}
           <div className={styles.body}>
             <Integrations />
           </div>

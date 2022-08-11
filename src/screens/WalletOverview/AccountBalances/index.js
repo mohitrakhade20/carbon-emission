@@ -7,12 +7,12 @@ import Modal from "../../../components/Modal";
 import Transfer from "../../../components/Transfer";
 
 const items = [
-  {
-    title: "Margin",
-    color: "#9757D7",
-    currency: "0.2785689852 BTC",
-    price: "$10,098.36",
-  },
+  // {
+  //   title: "Margin",
+  //   color: "#9757D7",
+  //   currency: "0.2785689852 BTC",
+  //   price: "$10,098.36",
+  // },
   {
     title: "Fiat and Spot",
     color: "#FFD166",
@@ -24,11 +24,11 @@ const items = [
     color: "#4BC9F0",
     soon: true,
   },
-  {
-    title: "Futures",
-    color: "#3772FF",
-    soon: true,
-  },
+  // {
+  //   title: "Futures",
+  //   color: "#3772FF",
+  //   soon: true,
+  // },
 ];
 
 const AccountBalances = () => {
@@ -60,13 +60,13 @@ const AccountBalances = () => {
                 <div className={styles.soon}>Coming soon</div>
               ) : (
                 <div className={styles.btns}>
-                  <Link
+                  {/* <Link
                     className={cn("button-stroke button-small", styles.button)}
                     to="/deposit-fiat"
                   >
                     <span>Deposit</span>
                     <Icon name="arrow-right" size="16" />
-                  </Link>
+                  </Link> */}
                   <button
                     className={cn("button-stroke button-small", styles.button)}
                     onClick={() => setVisibleTransfer(true)}

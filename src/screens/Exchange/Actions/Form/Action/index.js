@@ -51,7 +51,7 @@ const Action = ({
       <label className={styles.field}>
         <div className={styles.label}>Amount</div>
         <input className={styles.input} type="text" name="amount" required />
-        <div className={styles.currency}>BTC</div>
+        <div className={styles.currency}>WVRA</div>
       </label>
       <Range
         values={values}
@@ -141,7 +141,7 @@ const Action = ({
       <label className={styles.field}>
         <div className={styles.label}>Total</div>
         <input className={styles.input} type="text" name="total" required />
-        <div className={styles.currency}>BTC</div>
+        <div className={styles.currency}>USDT</div>
       </label>
       <button className={cn(classButton, styles.button)}>{buttonText}</button>
     </>

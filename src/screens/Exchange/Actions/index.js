@@ -49,7 +49,7 @@ const Actions = () => {
         {activeIndex === 0 && (
           <Form
             contentBuy="10,098.36 USDT"
-            contentSell="1.0356875565 BTC"
+            contentSell="1.0356875565 USDT"
             price
             visible={visibleAction}
             setValue={setVisible}
@@ -58,7 +58,7 @@ const Actions = () => {
         {activeIndex === 1 && (
           <Form
             contentBuy="10,098.36 USDT"
-            contentSell="1.0356875565 BTC"
+            contentSell="1.0356875565 WVRA"
             stop
             limit
             visible={visibleAction}
@@ -68,7 +68,7 @@ const Actions = () => {
         {activeIndex === 2 && (
           <Form
             contentBuy="USDT"
-            contentSell="BTC"
+            contentSell="WVRA"
             limit
             visible={visibleAction}
             setValue={setVisible}

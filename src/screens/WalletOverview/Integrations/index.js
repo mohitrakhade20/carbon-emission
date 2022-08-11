@@ -10,38 +10,38 @@ const Integrations = () => {
   const [integrations4, setIntegrations4] = useState(false);
 
   const items = [
-    {
-      title: "Tokocrypto",
-      content:
-        "Trade with Indonesian rupiah. Deposit and withdraw instantly with direct bank transfer.",
-      name: "integrations1",
-      value: integrations1,
-      setValue: setIntegrations1,
-    },
-    {
-      title: "WazirX",
-      content:
-        "Trade with WazirX. Deposit and withdraw instantly with direct bank transfer.",
-      name: "integrations2",
-      value: integrations2,
-      setValue: setIntegrations2,
-    },
-    {
-      title: "Poloniex",
-      content:
-        "Trade with Poloniex. Deposit and withdraw instantly with direct bank transfer.",
-      name: "integrations3",
-      value: integrations3,
-      setValue: setIntegrations3,
-    },
-    {
-      title: "Binance",
-      content:
-        "Trade with Binance. Deposit and withdraw instantly with direct bank transfer.",
-      name: "integrations4",
-      value: integrations4,
-      setValue: setIntegrations4,
-    },
+    // {
+    //   title: "Tokocrypto",
+    //   content:
+    //     "Trade with Indonesian rupiah. Deposit and withdraw instantly with direct bank transfer.",
+    //   name: "integrations1",
+    //   value: integrations1,
+    //   setValue: setIntegrations1,
+    // },
+    // {
+    //   title: "WazirX",
+    //   content:
+    //     "Trade with WazirX. Deposit and withdraw instantly with direct bank transfer.",
+    //   name: "integrations2",
+    //   value: integrations2,
+    //   setValue: setIntegrations2,
+    // },
+    // {
+    //   title: "Poloniex",
+    //   content:
+    //     "Trade with Poloniex. Deposit and withdraw instantly with direct bank transfer.",
+    //   name: "integrations3",
+    //   value: integrations3,
+    //   setValue: setIntegrations3,
+    // },
+    // {
+    //   title: "Binance",
+    //   content:
+    //     "Trade with Binance. Deposit and withdraw instantly with direct bank transfer.",
+    //   name: "integrations4",
+    //   value: integrations4,
+    //   setValue: setIntegrations4,
+    // },
   ];
 
   return (

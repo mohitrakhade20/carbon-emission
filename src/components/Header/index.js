@@ -15,21 +15,21 @@ const navigation = [
     title: "Exchange",
     url: "/exchange",
   },
-  {
-    title: "Buy Carbon Credits",
-    dropdown: [
-      {
-        title: "Buy with Crypto",
-        icon: "coin",
-        url: "/buy-crypto",
-      },
-      {
-        title: "Claim Carbon ",
-        icon: "coin",
-        url: "/deposit-fiat",
-      },
-    ],
-  },
+  // {
+  //   title: "Buy Carbon Credits",
+  //   dropdown: [
+  //     {
+  //       title: "Buy with Crypto",
+  //       icon: "coin",
+  //       url: "/buy-crypto",
+  //     },
+  //     {
+  //       title: "Claim Carbon ",
+  //       icon: "coin",
+  //       url: "/deposit-fiat",
+  //     },
+  //   ],
+  // },
   {
     title: "Market",
     url: "/market",
