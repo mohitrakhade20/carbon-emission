@@ -8,7 +8,7 @@ import Image from "../Image";
 
 const menu = [
   {
-    title: "Home",
+    title: "Exchange",
     url: "/exchange",
   },
   {

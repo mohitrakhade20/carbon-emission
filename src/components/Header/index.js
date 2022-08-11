@@ -35,7 +35,7 @@ const navigation = [
     url: "/market",
   },
   {
-    title: "Discover",
+    title: "Partnerships",
     url: "/learn-crypto",
   },
 ];

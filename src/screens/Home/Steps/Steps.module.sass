@@ -12,6 +12,7 @@
 .title
     margin-bottom: 20px
     margin-top: 30px
+    +body-bold-1
 
 .info
     color: $n3
@@ -89,9 +90,9 @@
     display: flex
     justify-content: center
     align-items: center
-    width: 96px
-    height: 96px
-    margin: 0 auto 80px
+    width: 105px
+    height: 105px
+    margin: 0 auto 60px
     border-radius: 24px
     +m
         margin: 0 0 32px 0
@@ -99,7 +100,7 @@
     &:after
         content: ""
         position: absolute
-        top: 50%
+        top: 45%
         width: 12px
         height: 12px
         transform: translateY(-50%)
@@ -113,8 +114,8 @@
         width: 100%
 
 .number
-    margin-bottom: 32px
-    +caption-bold-2
+    margin-bottom: 12px
+    +caption-bold-1
     color: $n4
 
 .subtitle
@@ -125,3 +126,10 @@
     color: $n3
     +dark
         color: $n6
+.container
+    padding-top: 10px
+    padding-bottom: 25px
+    border-radius: 10px
+    margin-top: 60px
+    background: linear-gradient(90deg, rgba(178, 199, 234, 0.3), rgba(221, 231, 250, 0.3))
+    box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1)

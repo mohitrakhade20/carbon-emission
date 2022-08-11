@@ -17,24 +17,25 @@ const navigation = [
     title: "Margin",
     color: "#9757D7",
     url: "/wallet-margin",
-  },
-  {
-    title: "Fiat and Spot",
-    color: "#FFD166",
-    url: "/fiat-and-spot",
     separator: true,
   },
+  // {
+  //   title: "Fiat and Spot",
+  //   color: "#FFD166",
+  //   url: "/fiat-and-spot",
+  //   separator: true,
+  // },
   {
     title: "Transfer",
     icon: "arrow-next",
   },
   {
-    title: "Buy with Fiat",
+    title: "Buy with Carbon",
     icon: "wallet",
     url: "/buy-crypto",
   },
   {
-    title: "Sell for Fitat",
+    title: "Claim Crypto",
     icon: "sell",
     url: "/sell-crypto",
   },

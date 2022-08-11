@@ -12,8 +12,8 @@ const items = [
     content:
       "Buy carbon credits with added liquidity & price transparency",
     button: "Corporation",
-    image: "/images/content/factory.jpg",
-    image2x: "/images/content/factory.jpg",
+    image: "/images/content/factory.png",
+    image2x: "/images/content/factory.png",
     url: "/buy-crypto",
   },
   {

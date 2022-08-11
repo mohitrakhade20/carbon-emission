@@ -10,9 +10,9 @@ const LearnCrypto = () => {
 
   return (
     <>
+      <Catalog scrollToRefCatalog={scrollToRefCatalog} />
       <Main scrollToRef={scrollToRef} scrollToRefCatalog={scrollToRefCatalog} />
       <Releases scrollToRef={scrollToRef} />
-      <Catalog scrollToRefCatalog={scrollToRefCatalog} />
       <News classSection="section-bg section-mb0" />
     </>
   );
