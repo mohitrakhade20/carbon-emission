@@ -14,10 +14,10 @@
         padding: 80px
     +t
         display: block
-        padding: 0
+        padding: 20px 6px
         min-height: auto
         box-shadow: none
-        background: none
+        // background: none
     +dark
         background: $n2
         +t
@@ -74,3 +74,26 @@
 
 .button
     margin-top: 48px
+.socials
+    display: flex
+    +m
+        margin-top: 20px
+    justify-content: center
+
+.social
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-shrink: 0
+    width: 20px
+    height: 20px
+    svg
+        fill: $n4
+        transition: fill .2s
+    &:hover 
+        svg
+            fill: $n2
+            +dark
+                fill: $n8
+    &:not(:last-child)
+        margin-right: 24px

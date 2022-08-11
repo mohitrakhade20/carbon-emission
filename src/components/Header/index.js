@@ -54,12 +54,12 @@ const Header = ({ headerWide }) => {
           <Image
             className={styles.picDesktop}
             src="/images/logo-light.png"
-            srcDark="/images/logo-carbon.png"
+            srcDark="/images/logo-light.png"
             alt="BitCloud"
           />
           <img
             className={styles.picMobile}
-            src="/images/logo.svg"
+            src="/images/logo-light.png"
             alt="BitCloud"
           />
         </Link>
